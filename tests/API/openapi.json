@@ -14303,211 +14303,6 @@
             },
             "parameters": []
         },
-        "/api/global_translations": {
-            "get": {
-                "operationId": "api_global_translations_get_collection",
-                "tags": [
-                    "GlobalTranslation"
-                ],
-                "responses": {
-                    "200": {
-                        "description": "GlobalTranslation collection",
-                        "content": {
-                            "application/ld+json": {
-                                "schema": {
-                                    "type": "object",
-                                    "properties": {
-                                        "hydra:member": {
-                                            "type": "array",
-                                            "items": {
-                                                "$ref": "#/components/schemas/GlobalTranslation.jsonld-translations"
-                                            }
-                                        },
-                                        "hydra:totalItems": {
-                                            "type": "integer",
-                                            "minimum": 0
-                                        },
-                                        "hydra:view": {
-                                            "type": "object",
-                                            "properties": {
-                                                "@id": {
-                                                    "type": "string",
-                                                    "format": "iri-reference"
-                                                },
-                                                "@type": {
-                                                    "type": "string"
-                                                },
-                                                "hydra:first": {
-                                                    "type": "string",
-                                                    "format": "iri-reference"
-                                                },
-                                                "hydra:last": {
-                                                    "type": "string",
-                                                    "format": "iri-reference"
-                                                },
-                                                "hydra:previous": {
-                                                    "type": "string",
-                                                    "format": "iri-reference"
-                                                },
-                                                "hydra:next": {
-                                                    "type": "string",
-                                                    "format": "iri-reference"
-                                                }
-                                            },
-                                            "example": {
-                                                "@id": "string",
-                                                "type": "string",
-                                                "hydra:first": "string",
-                                                "hydra:last": "string",
-                                                "hydra:previous": "string",
-                                                "hydra:next": "string"
-                                            }
-                                        },
-                                        "hydra:search": {
-                                            "type": "object",
-                                            "properties": {
-                                                "@type": {
-                                                    "type": "string"
-                                                },
-                                                "hydra:template": {
-                                                    "type": "string"
-                                                },
-                                                "hydra:variableRepresentation": {
-                                                    "type": "string"
-                                                },
-                                                "hydra:mapping": {
-                                                    "type": "array",
-                                                    "items": {
-                                                        "type": "object",
-                                                        "properties": {
-                                                            "@type": {
-                                                                "type": "string"
-                                                            },
-                                                            "variable": {
-                                                                "type": "string"
-                                                            },
-                                                            "property": {
-                                                                "type": "string",
-                                                                "nullable": true
-                                                            },
-                                                            "required": {
-                                                                "type": "boolean"
-                                                            }
-                                                        }
-                                                    }
-                                                }
-                                            }
-                                        }
-                                    },
-                                    "required": [
-                                        "hydra:member"
-                                    ]
-                                }
-                            },
-                            "application/json": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            },
-                            "application/vnd.api+json": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            },
-                            "text/html": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            },
-                            "multipart/form-data": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            },
-                            "text/csv": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            },
-                            "application/pdf": {
-                                "schema": {
-                                    "type": "array",
-                                    "items": {
-                                        "$ref": "#/components/schemas/GlobalTranslation-translations"
-                                    }
-                                }
-                            }
-                        }
-                    }
-                },
-                "summary": "Retrieves the collection of GlobalTranslation resources.",
-                "description": "Retrieves the collection of GlobalTranslation resources.",
-                "parameters": [
-                    {
-                        "name": "page",
-                        "in": "query",
-                        "description": "The collection page number",
-                        "required": false,
-                        "deprecated": false,
-                        "allowEmptyValue": true,
-                        "schema": {
-                            "type": "integer",
-                            "default": 1
-                        },
-                        "style": "form",
-                        "explode": false,
-                        "allowReserved": false
-                    },
-                    {
-                        "name": "itemsPerPage",
-                        "in": "query",
-                        "description": "The number of items per page",
-                        "required": false,
-                        "deprecated": false,
-                        "allowEmptyValue": true,
-                        "schema": {
-                            "type": "integer",
-                            "default": 30,
-                            "minimum": 0
-                        },
-                        "style": "form",
-                        "explode": false,
-                        "allowReserved": false
-                    },
-                    {
-                        "name": "pagination",
-                        "in": "query",
-                        "description": "Enable or disable pagination",
-                        "required": false,
-                        "deprecated": false,
-                        "allowEmptyValue": true,
-                        "schema": {
-                            "type": "boolean"
-                        },
-                        "style": "form",
-                        "explode": false,
-                        "allowReserved": false
-                    }
-                ],
-                "deprecated": false
-            },
-            "parameters": []
-        },
         "/api/known_types": {
             "get": {
                 "operationId": "api_known_types_get_collection",
@@ -17090,7 +16885,7 @@
                                         "hydra:member": {
                                             "type": "array",
                                             "items": {
-                                                "$ref": "#/components/schemas/Person.jsonld-person_read_self_person_read"
+                                                "$ref": "#/components/schemas/Person.jsonld-person_read"
                                             }
                                         },
                                         "hydra:totalItems": {
@@ -17178,7 +16973,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -17186,7 +16981,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -17194,7 +16989,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -17202,7 +16997,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -17210,7 +17005,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -17218,7 +17013,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_read_self_person_read"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             }
@@ -27655,7 +27450,7 @@
                                         "hydra:member": {
                                             "type": "array",
                                             "items": {
-                                                "$ref": "#/components/schemas/Person.jsonld-person_list"
+                                                "$ref": "#/components/schemas/Person.jsonld-person_read"
                                             }
                                         },
                                         "hydra:totalItems": {
@@ -27743,7 +27538,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -27751,7 +27546,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -27759,7 +27554,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -27767,7 +27562,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -27775,7 +27570,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             },
@@ -27783,7 +27578,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/Person-person_list"
+                                        "$ref": "#/components/schemas/Person-person_read"
                                     }
                                 }
                             }
@@ -38697,11 +38492,11 @@
             "get": {
                 "operationId": "api_promo_codes_get_collection",
                 "tags": [
-                    "PromoCodeView"
+                    "PromoCode"
                 ],
                 "responses": {
                     "200": {
-                        "description": "PromoCodeView collection",
+                        "description": "PromoCode collection",
                         "content": {
                             "application/ld+json": {
                                 "schema": {
@@ -38710,7 +38505,7 @@
                                         "hydra:member": {
                                             "type": "array",
                                             "items": {
-                                                "$ref": "#/components/schemas/PromoCodeView.jsonld-promo_code_read"
+                                                "$ref": "#/components/schemas/PromoCode.PromoCodeOutput.jsonld-promo_code_read"
                                             }
                                         },
                                         "hydra:totalItems": {
@@ -38798,7 +38593,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             },
@@ -38806,7 +38601,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             },
@@ -38814,7 +38609,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             },
@@ -38822,7 +38617,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             },
@@ -38830,7 +38625,7 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             },
@@ -38838,15 +38633,15 @@
                                 "schema": {
                                     "type": "array",
                                     "items": {
-                                        "$ref": "#/components/schemas/PromoCodeView-promo_code_read"
+                                        "$ref": "#/components/schemas/PromoCode.PromoCodeOutput-promo_code_read"
                                     }
                                 }
                             }
                         }
                     }
                 },
-                "summary": "Retrieves the collection of PromoCodeView resources.",
-                "description": "Retrieves the collection of PromoCodeView resources.",
+                "summary": "Retrieves the collection of PromoCode resources.",
+                "description": "Retrieves the collection of PromoCode resources.",
                 "parameters": [
                     {
                         "name": "page",
@@ -38908,17 +38703,34 @@
                         "allowReserved": false
                     },
                     {
-                        "name": "notNull[partner]",
+                        "name": "partner.uuid",
                         "in": "query",
                         "description": "",
                         "required": false,
                         "deprecated": false,
                         "allowEmptyValue": true,
                         "schema": {
-                            "type": "boolean"
+                            "type": "string"
                         },
                         "style": "form",
                         "explode": false,
+                        "allowReserved": false
+                    },
+                    {
+                        "name": "partner.uuid[]",
+                        "in": "query",
+                        "description": "",
+                        "required": false,
+                        "deprecated": false,
+                        "allowEmptyValue": true,
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "type": "string"
+                            }
+                        },
+                        "style": "form",
+                        "explode": true,
                         "allowReserved": false
                     },
                     {
@@ -52865,86 +52677,6 @@
                     }
                 }
             },
-            "Address-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "cityName": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "streetName": {
-                        "description": "Address constructor.",
-                        "type": "string"
-                    },
-                    "zipCode": {
-                        "description": "Address constructor.",
-                        "type": "string"
-                    },
-                    "country": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "addressAddIn": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "isoCode": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "lat": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat1": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat2": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat3": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng1": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng2": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng3": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
             "Address-person_write": {
                 "type": "object",
                 "description": "",
@@ -53623,121 +53355,6 @@
                         "description": "Address constructor.",
                         "type": "number",
                         "nullable": true
-                    },
-                    "uuid": {}
-                }
-            },
-            "Address.jsonld-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "cityName": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "streetName": {
-                        "description": "Address constructor.",
-                        "type": "string"
-                    },
-                    "zipCode": {
-                        "description": "Address constructor.",
-                        "type": "string"
-                    },
-                    "country": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "addressAddIn": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "isoCode": {
-                        "description": "Address constructor.",
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "lat": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat1": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat2": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lat3": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng1": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng2": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "lng3": {
-                        "description": "Address constructor.",
-                        "type": "number",
-                        "nullable": true
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
                     },
                     "uuid": {}
                 }
@@ -54455,26 +54072,6 @@
                     }
                 }
             },
-            "Attribute-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "category": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/AttributeCategory-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "uuid": {},
-                    "label": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "Attribute-point_of_interest_read": {
                 "type": "object",
                 "description": "",
@@ -54749,61 +54346,6 @@
                         "anyOf": [
                             {
                                 "$ref": "#/components/schemas/AttributeCategory.jsonld-person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "uuid": {},
-                    "label": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "Attribute.jsonld-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "category": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/AttributeCategory.jsonld-person_read_self_person_read"
                             }
                         ],
                         "nullable": true
@@ -55125,21 +54667,6 @@
                     }
                 }
             },
-            "AttributeCategory-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "AttributeCategory-revision_read": {
                 "type": "object",
                 "description": "",
@@ -55315,56 +54842,6 @@
                 }
             },
             "AttributeCategory.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "AttributeCategory.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
@@ -56207,60 +55684,6 @@
                     "uuid": {}
                 }
             },
-            "CamperVan-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "picture": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "year": {
-                        "description": "CamperVan constructor.",
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "brand": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Attribute-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "type": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVanType-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "ownership": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVanOwnershipType-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
             "CamperVan-person_write": {
                 "type": "object",
                 "description": "",
@@ -56472,95 +55895,6 @@
                     "uuid": {}
                 }
             },
-            "CamperVan.jsonld-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "picture": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "year": {
-                        "description": "CamperVan constructor.",
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "brand": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Attribute.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "type": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVanType.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "ownership": {
-                        "description": "CamperVan constructor.",
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVanOwnershipType.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
             "CamperVan.jsonld-person_write": {
                 "type": "object",
                 "description": "",
@@ -56725,21 +56059,6 @@
                     }
                 }
             },
-            "CamperVanOwnershipType-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "CamperVanOwnershipType-translations": {
                 "type": "object",
                 "description": "Class AttributeSection",
@@ -56850,56 +56169,6 @@
                 }
             },
             "CamperVanOwnershipType.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "CamperVanOwnershipType.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
@@ -57075,21 +56344,6 @@
                     }
                 }
             },
-            "CamperVanType-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "CamperVanType-translations": {
                 "type": "object",
                 "description": "Class CamperVanType",
@@ -57200,56 +56454,6 @@
                 }
             },
             "CamperVanType.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "CamperVanType.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
@@ -63383,40 +62587,6 @@
                     }
                 }
             },
-            "GlobalTranslation-translations": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "key": {
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                }
-            },
-            "GlobalTranslation.jsonld-translations": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "key": {
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string"
-                    }
-                }
-            },
             "KnownType-enumeration_read": {
                 "type": "object",
                 "description": "Class ActivityType",
@@ -64935,34 +64105,6 @@
                     }
                 }
             },
-            "Media-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "uuid": {},
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "contentUrl": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "filePath": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "mimeType": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "originalName": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "Media-person_write": {
                 "type": "object",
                 "description": "",
@@ -65607,69 +64749,6 @@
                 }
             },
             "Media.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "uuid": {},
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "contentUrl": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "filePath": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "mimeType": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "originalName": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "Media.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
@@ -67293,45 +66372,6 @@
                     "uuid": {}
                 }
             },
-            "Newsletter-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "activityValidated": {
-                        "type": "boolean"
-                    },
-                    "addressValidated": {
-                        "type": "boolean"
-                    },
-                    "areaCommented": {
-                        "type": "boolean"
-                    },
-                    "areaValidated": {
-                        "type": "boolean"
-                    },
-                    "commentReplied": {
-                        "type": "boolean"
-                    },
-                    "commentValidated": {
-                        "type": "boolean"
-                    },
-                    "messageReceived": {
-                        "type": "boolean"
-                    },
-                    "premiumExpired": {
-                        "type": "boolean"
-                    },
-                    "received": {
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
             "Newsletter-person_write": {
                 "type": "object",
                 "description": "",
@@ -67446,80 +66486,6 @@
                 }
             },
             "Newsletter.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "activityValidated": {
-                        "type": "boolean"
-                    },
-                    "addressValidated": {
-                        "type": "boolean"
-                    },
-                    "areaCommented": {
-                        "type": "boolean"
-                    },
-                    "areaValidated": {
-                        "type": "boolean"
-                    },
-                    "commentReplied": {
-                        "type": "boolean"
-                    },
-                    "commentValidated": {
-                        "type": "boolean"
-                    },
-                    "messageReceived": {
-                        "type": "boolean"
-                    },
-                    "premiumExpired": {
-                        "type": "boolean"
-                    },
-                    "received": {
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
-            "Newsletter.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
@@ -70706,17 +69672,6 @@
                     }
                 }
             },
-            "Partner-promo_code_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "title": {
-                        "type": "string"
-                    },
-                    "uuid": {}
-                }
-            },
             "Partner.jsonld-partner_read": {
                 "type": "object",
                 "description": "",
@@ -70903,52 +69858,6 @@
                         "example": "1",
                         "type": "boolean"
                     }
-                }
-            },
-            "Partner.jsonld-promo_code_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "title": {
-                        "type": "string"
-                    },
-                    "uuid": {}
                 }
             },
             "Payment-payment_export": {
@@ -72080,40 +70989,6 @@
                     }
                 }
             },
-            "Person-person_list": {
-                "type": "object",
-                "description": "Class Person",
-                "deprecated": false,
-                "properties": {
-                    "uuid": {},
-                    "endPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "familyName": {
-                        "type": "string"
-                    },
-                    "givenName": {
-                        "type": "string"
-                    },
-                    "translator": {
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "email": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    }
-                }
-            },
             "Person-person_read": {
                 "type": "object",
                 "description": "Class Person",
@@ -72269,207 +71144,6 @@
                     "id": {
                         "readOnly": true,
                         "type": "integer"
-                    },
-                    "plainPassword": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "enabled": {
-                        "type": "boolean"
-                    },
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "nbComments": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "nbPictures": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "nbPointOfInterests": {
-                        "readOnly": true,
-                        "type": "integer"
-                    }
-                }
-            },
-            "Person-person_read_self_person_read": {
-                "type": "object",
-                "description": "Class Person",
-                "deprecated": false,
-                "properties": {
-                    "favorites": {
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "format": "iri-reference"
-                        }
-                    },
-                    "uuid": {},
-                    "address": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Address-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "avatar": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "birthDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "caras": {
-                        "type": "integer"
-                    },
-                    "camperVan": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVan-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "civility": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "coverPicture": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "startPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "endPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "description": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "dtype": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "facebook": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "facebookId": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "familyName": {
-                        "type": "string"
-                    },
-                    "givenName": {
-                        "type": "string"
-                    },
-                    "googleId": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "instagram": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "language": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "newsletter": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Newsletter-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "privateFacebook": {
-                        "type": "boolean"
-                    },
-                    "privateInstagram": {
-                        "type": "boolean"
-                    },
-                    "publicUrl": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "rate": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "referrer": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "registeredFrom": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "startedAt": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "translator": {
-                        "type": "boolean"
-                    },
-                    "telephone": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "trips": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "vehicleType": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/VehicleType-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "validator": {
-                        "type": "boolean"
-                    },
-                    "locale": {
-                        "default": "fr",
-                        "example": "fr",
-                        "type": "string"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "email": {
-                        "type": "string",
-                        "nullable": true
                     },
                     "plainPassword": {
                         "type": "string",
@@ -73171,48 +71845,6 @@
                     }
                 }
             },
-            "Person.jsonld-person_list": {
-                "type": "object",
-                "description": "Class Person",
-                "deprecated": false,
-                "properties": {
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "uuid": {},
-                    "endPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "familyName": {
-                        "type": "string"
-                    },
-                    "givenName": {
-                        "type": "string"
-                    },
-                    "translator": {
-                        "type": "boolean"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "email": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    }
-                }
-            },
             "Person.jsonld-person_read": {
                 "type": "object",
                 "description": "Class Person",
@@ -73403,215 +72035,6 @@
                     "id": {
                         "readOnly": true,
                         "type": "integer"
-                    },
-                    "plainPassword": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "enabled": {
-                        "type": "boolean"
-                    },
-                    "createdAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "updatedAt": {
-                        "type": "string",
-                        "format": "date-time"
-                    },
-                    "nbComments": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "nbPictures": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "nbPointOfInterests": {
-                        "readOnly": true,
-                        "type": "integer"
-                    }
-                }
-            },
-            "Person.jsonld-person_read_self_person_read": {
-                "type": "object",
-                "description": "Class Person",
-                "deprecated": false,
-                "properties": {
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "favorites": {
-                        "readOnly": true,
-                        "type": "array",
-                        "items": {
-                            "type": "string",
-                            "format": "iri-reference"
-                        }
-                    },
-                    "uuid": {},
-                    "address": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Address.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "avatar": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "birthDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "caras": {
-                        "type": "integer"
-                    },
-                    "camperVan": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/CamperVan.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "civility": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "coverPicture": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Media.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "startPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "endPremiumDate": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "description": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "dtype": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "facebook": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "facebookId": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "familyName": {
-                        "type": "string"
-                    },
-                    "givenName": {
-                        "type": "string"
-                    },
-                    "googleId": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "instagram": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "language": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "newsletter": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Newsletter.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "privateFacebook": {
-                        "type": "boolean"
-                    },
-                    "privateInstagram": {
-                        "type": "boolean"
-                    },
-                    "publicUrl": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "rate": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "referrer": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "registeredFrom": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "startedAt": {
-                        "type": "string",
-                        "format": "date-time",
-                        "nullable": true
-                    },
-                    "translator": {
-                        "type": "boolean"
-                    },
-                    "telephone": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "trips": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "vehicleType": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/VehicleType.jsonld-person_read_self_person_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "validator": {
-                        "type": "boolean"
-                    },
-                    "locale": {
-                        "default": "fr",
-                        "example": "fr",
-                        "type": "string"
-                    },
-                    "id": {
-                        "readOnly": true,
-                        "type": "integer"
-                    },
-                    "email": {
-                        "type": "string",
-                        "nullable": true
                     },
                     "plainPassword": {
                         "type": "string",
@@ -78033,100 +76456,6 @@
                 "type": "object",
                 "description": "Class PromoCode",
                 "deprecated": false
-            },
-            "PromoCodeView-promo_code_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "code": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "maxUsage": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "duration": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "percent": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "usageCount": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "usageLeft": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "partner": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Partner-promo_code_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "id": {
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
-            },
-            "PromoCodeView.jsonld-promo_code_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "code": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "maxUsage": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "duration": {
-                        "type": "string",
-                        "nullable": true
-                    },
-                    "percent": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "usageCount": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "usageLeft": {
-                        "type": "integer",
-                        "nullable": true
-                    },
-                    "partner": {
-                        "anyOf": [
-                            {
-                                "$ref": "#/components/schemas/Partner.jsonld-promo_code_read"
-                            }
-                        ],
-                        "nullable": true
-                    },
-                    "id": {
-                        "type": "integer"
-                    },
-                    "uuid": {}
-                }
             },
             "Region-offmap_read": {
                 "type": "object",
@@ -84364,21 +82693,6 @@
                     }
                 }
             },
-            "VehicleType-person_read_self_person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
             "VehicleType-translations": {
                 "type": "object",
                 "description": "Class VehicleType",
@@ -84489,56 +82803,6 @@
                 }
             },
             "VehicleType.jsonld-person_read": {
-                "type": "object",
-                "description": "",
-                "deprecated": false,
-                "properties": {
-                    "@context": {
-                        "readOnly": true,
-                        "oneOf": [
-                            {
-                                "type": "string"
-                            },
-                            {
-                                "type": "object",
-                                "properties": {
-                                    "@vocab": {
-                                        "type": "string"
-                                    },
-                                    "hydra": {
-                                        "type": "string",
-                                        "enum": [
-                                            "http://www.w3.org/ns/hydra/core#"
-                                        ]
-                                    }
-                                },
-                                "required": [
-                                    "@vocab",
-                                    "hydra"
-                                ],
-                                "additionalProperties": true
-                            }
-                        ]
-                    },
-                    "@id": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "@type": {
-                        "readOnly": true,
-                        "type": "string"
-                    },
-                    "code": {
-                        "nullable": false,
-                        "type": "string"
-                    },
-                    "value": {
-                        "type": "string",
-                        "nullable": true
-                    }
-                }
-            },
-            "VehicleType.jsonld-person_read_self_person_read": {
                 "type": "object",
                 "description": "",
                 "deprecated": false,
