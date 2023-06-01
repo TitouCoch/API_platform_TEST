@@ -12,8 +12,8 @@ class MethodTest extends ApiTestCase
     protected array $filterRequired = [];
     protected bool $testInSeparateFile = true;
     public array $usersCredentials = [
-            'email' => 'athome-solution@gmail.com',
-            'password' => 'Password123!'
+            'email' => 'mail',
+            'password' => 'password'
     ];
     protected array $componentReplacements = [
         '-enumeration_write' => '/-translations/', //Many Path
