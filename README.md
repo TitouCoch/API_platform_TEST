@@ -18,7 +18,13 @@ To run the test suite, follow these steps:
 
 1. Open your terminal and navigate to the root directory of your Symfony project.
 
-2. Execute the following command:
+2. Export the API with the following command
+
+```shell
+php bin/console api:openapi:export -o ...path/openapi.json
+````
+
+3. Execute the following command:
 
 ```shell
 php bin/phpunit --coverage-html ./CoverageReport
@@ -29,3 +35,28 @@ This command will run the PHPUnit tests and generate a coverage report in the Co
 ## Here is the result 
 
 <a href="https://imgur.com/CTnnKC4"><img src="https://i.imgur.com/CTnnKC4.png" title="source: imgur.com" /></a>
+
+You can add test suite in the phpunit.result.cache file 
+
+```php
+    <testsuites>
+        <testsuite name="unit">
+            <directory>tests</directory>
+        </testsuite>
+
+        <testsuite name="api">
+            <directory>tests/API</directory>
+        </testsuite>
+
+        <testsuite name="endpoint_file">
+            <directory>tests/API/EndPoint</directory>
+        </testsuite>
+    </testsuites>
+````
+
+You can list and run your test suites using the command
+
+```shell
+php bin/phpunit --list-suites
+php bin/phpunit --testsuite api
+````
