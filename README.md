@@ -1,3 +1,4 @@
+[![forthebadge](https://forthebadge.com/images/badges/for-sharks.svg)](https://forthebadge.com) 
 # API Platform Test Runner  
 
 This project aims to automate PHPUnit tests for Symfony API endpoints using the API provided by API Platform. It helps ensure the functionality and integrity of the endpoints by executing predefined tests.
@@ -27,7 +28,9 @@ php bin/console api:openapi:export -o ...path/openapi.json
 3. Execute the following command:
 
 ```shell
-php bin/phpunit --coverage-html ./CoverageReport
+php -dxdebug.mode=coverage bin/phpunit --coverage-html ./CoverageReport
+//or
+php bin/phpunit --coverage-text 
 ````
 
 This command will run the PHPUnit tests and generate a coverage report in the CoverageReport folder. You can open the generated HTML report in your web browser to analyze the test coverage.
@@ -35,8 +38,10 @@ This command will run the PHPUnit tests and generate a coverage report in the Co
 ## Here is the result 
 
 <a href="https://imgur.com/CTnnKC4"><img src="https://i.imgur.com/CTnnKC4.png" title="source: imgur.com" /></a>
+--
+<a href="https://imgur.com/5JBAT56"><img src="https://i.imgur.com/5JBAT56.png" title="source: imgur.com" style="width:30%"/></a>
 
-You can add test suite in the phpunit.result.cache file 
+The program will automatically generate the test suite with your path 
 
 ```php
     <testsuites>
@@ -54,9 +59,11 @@ You can add test suite in the phpunit.result.cache file
     </testsuites>
 ````
 
-You can list and run your test suites using the command
+You run your test suites using the command
 
 ```shell
 php bin/phpunit --list-suites
 php bin/phpunit --testsuite api
 ````
+
+Errors on tests are returned to the errors.json file
