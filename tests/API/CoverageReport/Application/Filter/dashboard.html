@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/app/src/Application/Filter</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/app/src</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Application</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Filter</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#15">App\Application\Filter\Revision\MinimumLengthFilter</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryFilter.php.html#19">App\Application\Filter\QueryFilter</a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#15">App\Application\Filter\Enumeration\TypeFilter</a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="Revision/ServiceFilter.php.html#16">App\Application\Filter\Revision\ServiceFilter</a></td><td class="text-right">56%</td></tr>
+       <tr><td><a href="AbstractTranslationFilter.php.html#19">App\Application\Filter\AbstractTranslationFilter</a></td><td class="text-right">57%</td></tr>
+       <tr><td><a href="Activity/QueryOrFilter.php.html#13">App\Application\Filter\Activity\QueryOrFilter</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="TeamMember/SearchOrFilter.php.html#13">App\Application\Filter\TeamMember\SearchOrFilter</a></td><td class="text-right">64%</td></tr>
+       <tr><td><a href="Revision/TypeFilter.php.html#15">App\Application\Filter\Revision\TypeFilter</a></td><td class="text-right">66%</td></tr>
+       <tr><td><a href="SoftDeleteFilter.php.html#18">App\Application\Filter\SoftDeleteFilter</a></td><td class="text-right">68%</td></tr>
+       <tr><td><a href="Revision/NotationFilter.php.html#15">App\Application\Filter\Revision\NotationFilter</a></td><td class="text-right">72%</td></tr>
+       <tr><td><a href="Revision/MinimumHeightFilter.php.html#15">App\Application\Filter\Revision\MinimumHeightFilter</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Revision/MinimumWidthFilter.php.html#15">App\Application\Filter\Revision\MinimumWidthFilter</a></td><td class="text-right">75%</td></tr>
+       <tr><td><a href="Revision/MainFilter.php.html#15">App\Application\Filter\Revision\MainFilter</a></td><td class="text-right">76%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="QueryFilter.php.html#19">App\Application\Filter\QueryFilter</a></td><td class="text-right">512</td></tr>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#15">App\Application\Filter\Revision\MinimumLengthFilter</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#15">App\Application\Filter\Enumeration\TypeFilter</a></td><td class="text-right">51</td></tr>
+       <tr><td><a href="SoftDeleteFilter.php.html#18">App\Application\Filter\SoftDeleteFilter</a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="Revision/ServiceFilter.php.html#16">App\Application\Filter\Revision\ServiceFilter</a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="AbstractTranslationFilter.php.html#19">App\Application\Filter\AbstractTranslationFilter</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Revision/TypeFilter.php.html#15">App\Application\Filter\Revision\TypeFilter</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="Activity/QueryOrFilter.php.html#13">App\Application\Filter\Activity\QueryOrFilter</a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="TeamMember/SearchOrFilter.php.html#13">App\Application\Filter\TeamMember\SearchOrFilter</a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Revision/NotationFilter.php.html#15">App\Application\Filter\Revision\NotationFilter</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="Revision/MinimumHeightFilter.php.html#15">App\Application\Filter\Revision\MinimumHeightFilter</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Revision/MinimumWidthFilter.php.html#15">App\Application\Filter\Revision\MinimumWidthFilter</a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Revision/MainFilter.php.html#15">App\Application\Filter\Revision\MainFilter</a></td><td class="text-right">6</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#101"><abbr title="App\Application\Filter\Enumeration\TypeFilter::normalizeValues">normalizeValues</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryFilter.php.html#92"><abbr title="App\Application\Filter\QueryFilter::addWhere">addWhere</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryFilter.php.html#141"><abbr title="App\Application\Filter\QueryFilter::handleProps">handleProps</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="QueryFilter.php.html#193"><abbr title="App\Application\Filter\QueryFilter::flatten">flatten</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#22"><abbr title="App\Application\Filter\Revision\MinimumLengthFilter::getDescription">getDescription</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MinimumLengthFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#29"><abbr title="App\Application\Filter\Enumeration\TypeFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="AbstractTranslationFilter.php.html#44"><abbr title="App\Application\Filter\AbstractTranslationFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">16%</td></tr>
+       <tr><td><a href="Revision/ServiceFilter.php.html#57"><abbr title="App\Application\Filter\Revision\ServiceFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">23%</td></tr>
+       <tr><td><a href="Activity/QueryOrFilter.php.html#54"><abbr title="App\Application\Filter\Activity\QueryOrFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">26%</td></tr>
+       <tr><td><a href="QueryFilter.php.html#69"><abbr title="App\Application\Filter\QueryFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">28%</td></tr>
+       <tr><td><a href="TeamMember/SearchOrFilter.php.html#54"><abbr title="App\Application\Filter\TeamMember\SearchOrFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">30%</td></tr>
+       <tr><td><a href="Revision/MainFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MainFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Revision/TypeFilter.php.html#56"><abbr title="App\Application\Filter\Revision\TypeFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">33%</td></tr>
+       <tr><td><a href="Revision/NotationFilter.php.html#56"><abbr title="App\Application\Filter\Revision\NotationFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">40%</td></tr>
+       <tr><td><a href="SoftDeleteFilter.php.html#47"><abbr title="App\Application\Filter\SoftDeleteFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">43%</td></tr>
+       <tr><td><a href="Revision/MinimumHeightFilter.php.html#28"><abbr title="App\Application\Filter\Revision\MinimumHeightFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">44%</td></tr>
+       <tr><td><a href="Revision/MinimumWidthFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MinimumWidthFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">44%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="QueryFilter.php.html#92"><abbr title="App\Application\Filter\QueryFilter::addWhere">addWhere</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="QueryFilter.php.html#141"><abbr title="App\Application\Filter\QueryFilter::handleProps">handleProps</abbr></a></td><td class="text-right">110</td></tr>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#29"><abbr title="App\Application\Filter\Enumeration\TypeFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">33</td></tr>
+       <tr><td><a href="SoftDeleteFilter.php.html#47"><abbr title="App\Application\Filter\SoftDeleteFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">27</td></tr>
+       <tr><td><a href="Enumeration/TypeFilter.php.html#101"><abbr title="App\Application\Filter\Enumeration\TypeFilter::normalizeValues">normalizeValues</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MinimumLengthFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="QueryFilter.php.html#69"><abbr title="App\Application\Filter\QueryFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">19</td></tr>
+       <tr><td><a href="Revision/ServiceFilter.php.html#57"><abbr title="App\Application\Filter\Revision\ServiceFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">16</td></tr>
+       <tr><td><a href="AbstractTranslationFilter.php.html#44"><abbr title="App\Application\Filter\AbstractTranslationFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">13</td></tr>
+       <tr><td><a href="Revision/TypeFilter.php.html#56"><abbr title="App\Application\Filter\Revision\TypeFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Revision/MinimumLengthFilter.php.html#22"><abbr title="App\Application\Filter\Revision\MinimumLengthFilter::getDescription">getDescription</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Activity/QueryOrFilter.php.html#54"><abbr title="App\Application\Filter\Activity\QueryOrFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">10</td></tr>
+       <tr><td><a href="TeamMember/SearchOrFilter.php.html#54"><abbr title="App\Application\Filter\TeamMember\SearchOrFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">9</td></tr>
+       <tr><td><a href="Revision/NotationFilter.php.html#56"><abbr title="App\Application\Filter\Revision\NotationFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">7</td></tr>
+       <tr><td><a href="Revision/MinimumHeightFilter.php.html#28"><abbr title="App\Application\Filter\Revision\MinimumHeightFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Revision/MinimumWidthFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MinimumWidthFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Revision/MainFilter.php.html#56"><abbr title="App\Application\Filter\Revision\MainFilter::filterProperty">filterProperty</abbr></a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.26</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.4</a> and <a href="https://phpunit.de/">PHPUnit 9.6.8</a> at Tue Jun 6 15:30:20 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([1,0,1,0,1,0,2,4,4,0,0,1], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([6,1,1,3,3,4,0,0,0,0,10,5], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[57.692307692307686,7,"<a href=\"AbstractTranslationFilter.php.html#19\">App\\Application\\Filter\\AbstractTranslationFilter<\/a>"],[60,7,"<a href=\"Activity\/QueryOrFilter.php.html#13\">App\\Application\\Filter\\Activity\\QueryOrFilter<\/a>"],[100,0,"<a href=\"Attribute\/LabelAttributeFilter.php.html#11\">App\\Application\\Filter\\Attribute\\LabelAttributeFilter<\/a>"],[30.555555555555557,11,"<a href=\"Enumeration\/TypeFilter.php.html#15\">App\\Application\\Filter\\Enumeration\\TypeFilter<\/a>"],[16.867469879518072,29,"<a href=\"QueryFilter.php.html#19\">App\\Application\\Filter\\QueryFilter<\/a>"],[76.19047619047619,6,"<a href=\"Revision\/MainFilter.php.html#15\">App\\Application\\Filter\\Revision\\MainFilter<\/a>"],[75,7,"<a href=\"Revision\/MinimumHeightFilter.php.html#15\">App\\Application\\Filter\\Revision\\MinimumHeightFilter<\/a>"],[0,7,"<a href=\"Revision\/MinimumLengthFilter.php.html#15\">App\\Application\\Filter\\Revision\\MinimumLengthFilter<\/a>"],[75,7,"<a href=\"Revision\/MinimumWidthFilter.php.html#15\">App\\Application\\Filter\\Revision\\MinimumWidthFilter<\/a>"],[72,7,"<a href=\"Revision\/NotationFilter.php.html#15\">App\\Application\\Filter\\Revision\\NotationFilter<\/a>"],[56.25,8,"<a href=\"Revision\/ServiceFilter.php.html#16\">App\\Application\\Filter\\Revision\\ServiceFilter<\/a>"],[66.66666666666666,8,"<a href=\"Revision\/TypeFilter.php.html#15\">App\\Application\\Filter\\Revision\\TypeFilter<\/a>"],[68.75,14,"<a href=\"SoftDeleteFilter.php.html#18\">App\\Application\\Filter\\SoftDeleteFilter<\/a>"],[64.28571428571429,7,"<a href=\"TeamMember\/SearchOrFilter.php.html#13\">App\\Application\\Filter\\TeamMember\\SearchOrFilter<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[100,1,"<a href=\"AbstractTranslationFilter.php.html#24\">App\\Application\\Filter\\AbstractTranslationFilter::__construct<\/a>"],[16.666666666666664,4,"<a href=\"AbstractTranslationFilter.php.html#44\">App\\Application\\Filter\\AbstractTranslationFilter::filterProperty<\/a>"],[92.3076923076923,2,"<a href=\"AbstractTranslationFilter.php.html#71\">App\\Application\\Filter\\AbstractTranslationFilter::getDescription<\/a>"],[93.33333333333333,3,"<a href=\"Activity\/QueryOrFilter.php.html#20\">App\\Application\\Filter\\Activity\\QueryOrFilter::getDescription<\/a>"],[26.666666666666668,4,"<a href=\"Activity\/QueryOrFilter.php.html#54\">App\\Application\\Filter\\Activity\\QueryOrFilter::filterProperty<\/a>"],[8.695652173913043,6,"<a href=\"Enumeration\/TypeFilter.php.html#29\">App\\Application\\Filter\\Enumeration\\TypeFilter::filterProperty<\/a>"],[100,1,"<a href=\"Enumeration\/TypeFilter.php.html#84\">App\\Application\\Filter\\Enumeration\\TypeFilter::getDescription<\/a>"],[0,4,"<a href=\"Enumeration\/TypeFilter.php.html#101\">App\\Application\\Filter\\Enumeration\\TypeFilter::normalizeValues<\/a>"],[100,1,"<a href=\"QueryFilter.php.html#31\">App\\Application\\Filter\\QueryFilter::__construct<\/a>"],[100,1,"<a href=\"QueryFilter.php.html#44\">App\\Application\\Filter\\QueryFilter::getDescription<\/a>"],[28.57142857142857,6,"<a href=\"QueryFilter.php.html#69\">App\\Application\\Filter\\QueryFilter::filterProperty<\/a>"],[0,10,"<a href=\"QueryFilter.php.html#92\">App\\Application\\Filter\\QueryFilter::addWhere<\/a>"],[0,10,"<a href=\"QueryFilter.php.html#141\">App\\Application\\Filter\\QueryFilter::handleProps<\/a>"],[0,1,"<a href=\"QueryFilter.php.html#193\">App\\Application\\Filter\\QueryFilter::flatten<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/MainFilter.php.html#22\">App\\Application\\Filter\\Revision\\MainFilter::getDescription<\/a>"],[33.33333333333333,3,"<a href=\"Revision\/MainFilter.php.html#56\">App\\Application\\Filter\\Revision\\MainFilter::filterProperty<\/a>"],[44.44444444444444,4,"<a href=\"Revision\/MinimumHeightFilter.php.html#28\">App\\Application\\Filter\\Revision\\MinimumHeightFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/MinimumHeightFilter.php.html#57\">App\\Application\\Filter\\Revision\\MinimumHeightFilter::getDescription<\/a>"],[0,3,"<a href=\"Revision\/MinimumLengthFilter.php.html#22\">App\\Application\\Filter\\Revision\\MinimumLengthFilter::getDescription<\/a>"],[0,4,"<a href=\"Revision\/MinimumLengthFilter.php.html#56\">App\\Application\\Filter\\Revision\\MinimumLengthFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/MinimumWidthFilter.php.html#22\">App\\Application\\Filter\\Revision\\MinimumWidthFilter::getDescription<\/a>"],[44.44444444444444,4,"<a href=\"Revision\/MinimumWidthFilter.php.html#56\">App\\Application\\Filter\\Revision\\MinimumWidthFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/NotationFilter.php.html#22\">App\\Application\\Filter\\Revision\\NotationFilter::getDescription<\/a>"],[40,4,"<a href=\"Revision\/NotationFilter.php.html#56\">App\\Application\\Filter\\Revision\\NotationFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/ServiceFilter.php.html#23\">App\\Application\\Filter\\Revision\\ServiceFilter::getDescription<\/a>"],[23.52941176470588,5,"<a href=\"Revision\/ServiceFilter.php.html#57\">App\\Application\\Filter\\Revision\\ServiceFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"Revision\/TypeFilter.php.html#22\">App\\Application\\Filter\\Revision\\TypeFilter::getDescription<\/a>"],[33.33333333333333,5,"<a href=\"Revision\/TypeFilter.php.html#56\">App\\Application\\Filter\\Revision\\TypeFilter::filterProperty<\/a>"],[100,1,"<a href=\"SoftDeleteFilter.php.html#27\">App\\Application\\Filter\\SoftDeleteFilter::__construct<\/a>"],[43.75,10,"<a href=\"SoftDeleteFilter.php.html#47\">App\\Application\\Filter\\SoftDeleteFilter::filterProperty<\/a>"],[93.33333333333333,3,"<a href=\"SoftDeleteFilter.php.html#82\">App\\Application\\Filter\\SoftDeleteFilter::getDescription<\/a>"],[93.33333333333333,3,"<a href=\"TeamMember\/SearchOrFilter.php.html#20\">App\\Application\\Filter\\TeamMember\\SearchOrFilter::getDescription<\/a>"],[30.76923076923077,4,"<a href=\"TeamMember\/SearchOrFilter.php.html#54\">App\\Application\\Filter\\TeamMember\\SearchOrFilter::filterProperty<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

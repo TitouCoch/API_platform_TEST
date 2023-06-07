@@ -4,16 +4,16 @@ namespace App\Tests\API;
 
 use ApiPlatform\Symfony\Bundle\Test\ApiTestCase;
 
-class MethodTest extends ApiTestCase
+class AAMethodTest extends ApiTestCase
 {
-    protected ?string $token = null;
+    protected static ?string $token = null;
     protected string $loginPath = '/api/login_check';
     protected array $methodAccepted = ['GET', 'POST', 'PUT', 'DELETE'];
     protected array $filterRequired = [];
-    protected bool $testInSeparateFile = true;
+    protected bool $testInSeparateFile = false;
     public array $usersCredentials = [
-            'email' => 'mail',
-            'password' => 'password'
+            'email' => 'athome-solution@gmail.com',
+            'password' => 'Password123!'
     ];
     protected array $componentReplacements = [
         '-enumeration_write' => '/-translations/', //Many Path
@@ -36,14 +36,14 @@ class MethodTest extends ApiTestCase
 
     protected function getToken(): string|null
     {
-        if ($this->token) {
-            return $this->token;
+        if (isset(self::$token)) {
+            return self::$token;
         }
         $response = static::createClient()->request('POST', $this->loginPath, ['json' => $this->usersCredentials]);
         $this->assertResponseIsSuccessful();
         $data = json_decode($response->getContent());
         try{
-            $this->token = $data->id_token;
+            self::$token = $data->id_token;
             return $data->id_token;
         } catch(\Exception $exception) {
             $this->throwError('ERROR : GetToken()',$exception->getMessage());
@@ -54,14 +54,15 @@ class MethodTest extends ApiTestCase
     protected function getDataFixture(string $pathCut, string $key, array $filters, ?string $path = null): string|null
     {
         $response = static::createClient()->request('GET', $pathCut, [
-            'headers' => ['Accept' => 'application/ld+json','Authorization' => 'Bearer '. $this->token],
+            'headers' => ['Accept' => 'application/ld+json','Authorization' => 'Bearer '. self::$token],
             'query' => ['deletedAt' => 'false'],
         ]);
         $data = json_decode($response->getContent(), true);
         $nb = count($data['hydra:member']);
         try{
             if($key == '@id' && isset($path)){
-                if(isset($data['hydra:member'][$nb-1]['uuid'])){
+                $attribut = $data['hydra:member'][$nb-1]['uuid'] ?? null;
+                if(isset($attribut)){
                     return $data['hydra:member'][$nb-1]['uuid'] ?? null;
                 }
             }
@@ -79,12 +80,10 @@ class MethodTest extends ApiTestCase
             if (!$type) {
                 return (object)array();
             }
-
             $default = $definition['default'] ?? null;
             if (isset($default)) {
                 return $default;
             }
-
             return match ($type) {
                 'string' => 't'.rand(1,9),
                 'integer', 'number' => rand(0,10),

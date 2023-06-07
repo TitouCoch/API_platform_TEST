@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/app/src/Infrastructure</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../_css/bootstrap.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../_css/nv.d3.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../_css/style.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../index.html">/var/www/app/src</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Infrastructure</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#18">App\Infrastructure\EventListener\ConvertImageEventListener</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#17">App\Infrastructure\Repository\ActivityRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityTranslationRepository.php.html#11">App\Infrastructure\Repository\ActivityTranslationRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityTypeRepository.php.html#11">App\Infrastructure\Repository\ActivityTypeRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/AttributeCategoryRepository.php.html#13">App\Infrastructure\Repository\AttributeCategoryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/AwardRepository.php.html#12">App\Infrastructure\Repository\AwardRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CamperVanTypeRepository.php.html#11">App\Infrastructure\Repository\CamperVanTypeRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentTranslationRepository.php.html#15">App\Infrastructure\Repository\CommentTranslationRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CountryRepository.php.html#11">App\Infrastructure\Repository\CountryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryCountryRepository.php.html#15">App\Infrastructure\Repository\DirectoryCountryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryCountryTranslationRepository.php.html#14">App\Infrastructure\Repository\DirectoryCountryTranslationRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryDepartmentRepository.php.html#15">App\Infrastructure\Repository\DirectoryDepartmentRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryDepartmentTranslationRepository.php.html#14">App\Infrastructure\Repository\DirectoryDepartmentTranslationRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/EnumerationTranslationRepository.php.html#11">App\Infrastructure\Repository\EnumerationTranslationRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/InvoiceRepository.php.html#11">App\Infrastructure\Repository\InvoiceRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleMessageRepository.php.html#15">App\Infrastructure\Repository\LocaleMessageRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleRepository.php.html#13">App\Infrastructure\Repository\LocaleRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#11">App\Infrastructure\Repository\MediaRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MetadataRepository.php.html#14">App\Infrastructure\Repository\MetadataRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MobileAdRepository.php.html#13">App\Infrastructure\Repository\MobileAdRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/NotificationChannelRepository.php.html#13">App\Infrastructure\Repository\NotificationChannelRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OffmapCategoryRepository.php.html#11">App\Infrastructure\Repository\OffmapCategoryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OffmapRepository.php.html#14">App\Infrastructure\Repository\OffmapRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OwnershipRequestRepository.php.html#16">App\Infrastructure\Repository\OwnershipRequestRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PartnerRepository.php.html#13">App\Infrastructure\Repository\PartnerRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PaymentRepository.php.html#14">App\Infrastructure\Repository\PaymentRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonPromoCodeRepository.php.html#11">App\Infrastructure\Repository\PersonPromoCodeRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RegionRepository.php.html#11">App\Infrastructure\Repository\RegionRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TeamMemberRepository.php.html#13">App\Infrastructure\Repository\TeamMemberRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCategoryRepository.php.html#14">App\Infrastructure\Repository\TripCategoryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCommentRepository.php.html#10">App\Infrastructure\Repository\TripCommentRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCountryRepository.php.html#14">App\Infrastructure\Repository\TripCountryRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripMapPointRepository.php.html#11">App\Infrastructure\Repository\TripMapPointRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/VehicleTypeRepository.php.html#11">App\Infrastructure\Repository\VehicleTypeRepository</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#17">App\Infrastructure\Repository\LogRepository</a></td><td class="text-right">1%</td></tr>
+       <tr><td><a href="Repository/WebAdRepository.php.html#14">App\Infrastructure\Repository\WebAdRepository</a></td><td class="text-right">2%</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#21">App\Infrastructure\Repository\CommentRepository</a></td><td class="text-right">4%</td></tr>
+       <tr><td><a href="Repository/RevisionAttributeRepository.php.html#14">App\Infrastructure\Repository\RevisionAttributeRepository</a></td><td class="text-right">7%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#20">App\Infrastructure\Repository\PersonRepository</a></td><td class="text-right">8%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#24">App\Infrastructure\Repository\PointOfInterestRepository</a></td><td class="text-right">18%</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#16">App\Infrastructure\Repository\PersonPointOfInterestRepository</a></td><td class="text-right">21%</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#20">App\Infrastructure\Repository\ResetPasswordRequestRepository</a></td><td class="text-right">25%</td></tr>
+       <tr><td><a href="Repository/TripRepository.php.html#13">App\Infrastructure\Repository\TripRepository</a></td><td class="text-right">29%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#31">App\Infrastructure\Repository\RevisionRepository</a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestGpsRepository.php.html#19">App\Infrastructure\Repository\PointOfInterestGpsRepository</a></td><td class="text-right">58%</td></tr>
+       <tr><td><a href="Repository/PictureRepository.php.html#22">App\Infrastructure\Repository\PictureRepository</a></td><td class="text-right">60%</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#15">App\Infrastructure\Repository\PromoCodeRepository</a></td><td class="text-right">62%</td></tr>
+       <tr><td><a href="EventListener/PictureSubscriber.php.html#16">App\Infrastructure\EventListener\PictureSubscriber</a></td><td class="text-right">63%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Repository/PersonRepository.php.html#20">App\Infrastructure\Repository\PersonRepository</a></td><td class="text-right">189</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#31">App\Infrastructure\Repository\RevisionRepository</a></td><td class="text-right">140</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#21">App\Infrastructure\Repository\CommentRepository</a></td><td class="text-right">78</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#24">App\Infrastructure\Repository\PointOfInterestRepository</a></td><td class="text-right">65</td></tr>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#18">App\Infrastructure\EventListener\ConvertImageEventListener</a></td><td class="text-right">56</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#17">App\Infrastructure\Repository\ActivityRepository</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#15">App\Infrastructure\Repository\PromoCodeRepository</a></td><td class="text-right">38</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#16">App\Infrastructure\Repository\PersonPointOfInterestRepository</a></td><td class="text-right">31</td></tr>
+       <tr><td><a href="Repository/MobileAdRepository.php.html#13">App\Infrastructure\Repository\MobileAdRepository</a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#17">App\Infrastructure\Repository\LogRepository</a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="Repository/WebAdRepository.php.html#14">App\Infrastructure\Repository\WebAdRepository</a></td><td class="text-right">28</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#20">App\Infrastructure\Repository\ResetPasswordRequestRepository</a></td><td class="text-right">21</td></tr>
+       <tr><td><a href="Repository/PictureRepository.php.html#22">App\Infrastructure\Repository\PictureRepository</a></td><td class="text-right">8</td></tr>
+       <tr><td><a href="EventListener/PictureSubscriber.php.html#16">App\Infrastructure\EventListener\PictureSubscriber</a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PointOfInterestGpsRepository.php.html#19">App\Infrastructure\Repository\PointOfInterestGpsRepository</a></td><td class="text-right">5</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#20"><abbr title="App\Infrastructure\EventListener\ConvertImageEventListener::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#33"><abbr title="App\Infrastructure\EventListener\ConvertImageEventListener::onVichUploaderPreUpload">onVichUploaderPreUpload</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#74"><abbr title="App\Infrastructure\EventListener\ConvertImageEventListener::onVichUploaderPostUpload">onVichUploaderPostUpload</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#19"><abbr title="App\Infrastructure\Repository\ActivityRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#28"><abbr title="App\Infrastructure\Repository\ActivityRepository::uncertifiedActivityCount">uncertifiedActivityCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#40"><abbr title="App\Infrastructure\Repository\ActivityRepository::countActiveActivity">countActiveActivity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#55"><abbr title="App\Infrastructure\Repository\ActivityRepository::countCreatedActivityByDate">countCreatedActivityByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityTranslationRepository.php.html#13"><abbr title="App\Infrastructure\Repository\ActivityTranslationRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ActivityTypeRepository.php.html#13"><abbr title="App\Infrastructure\Repository\ActivityTypeRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/AttributeCategoryRepository.php.html#15"><abbr title="App\Infrastructure\Repository\AttributeCategoryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/AwardRepository.php.html#14"><abbr title="App\Infrastructure\Repository\AwardRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/AwardRepository.php.html#19"><abbr title="App\Infrastructure\Repository\AwardRepository::findByPointOfInterest">findByPointOfInterest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CamperVanTypeRepository.php.html#16"><abbr title="App\Infrastructure\Repository\CamperVanTypeRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#52"><abbr title="App\Infrastructure\Repository\CommentRepository::getCommentsByUserAndEntity">getCommentsByUserAndEntity</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#112"><abbr title="App\Infrastructure\Repository\CommentRepository::uncertifiedCommentsCount">uncertifiedCommentsCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#124"><abbr title="App\Infrastructure\Repository\CommentRepository::countCreatedCommentByDate">countCreatedCommentByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentTranslationRepository.php.html#17"><abbr title="App\Infrastructure\Repository\CommentTranslationRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CommentTranslationRepository.php.html#22"><abbr title="App\Infrastructure\Repository\CommentTranslationRepository::findNotBy">findNotBy</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/CountryRepository.php.html#13"><abbr title="App\Infrastructure\Repository\CountryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryCountryRepository.php.html#17"><abbr title="App\Infrastructure\Repository\DirectoryCountryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryCountryRepository.php.html#25"><abbr title="App\Infrastructure\Repository\DirectoryCountryRepository::findOneBySlug">findOneBySlug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryCountryTranslationRepository.php.html#16"><abbr title="App\Infrastructure\Repository\DirectoryCountryTranslationRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryDepartmentRepository.php.html#17"><abbr title="App\Infrastructure\Repository\DirectoryDepartmentRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryDepartmentRepository.php.html#25"><abbr title="App\Infrastructure\Repository\DirectoryDepartmentRepository::findOneBySlug">findOneBySlug</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/DirectoryDepartmentTranslationRepository.php.html#16"><abbr title="App\Infrastructure\Repository\DirectoryDepartmentTranslationRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/EnumerationTranslationRepository.php.html#13"><abbr title="App\Infrastructure\Repository\EnumerationTranslationRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/InvoiceRepository.php.html#16"><abbr title="App\Infrastructure\Repository\InvoiceRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleMessageRepository.php.html#17"><abbr title="App\Infrastructure\Repository\LocaleMessageRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleMessageRepository.php.html#27"><abbr title="App\Infrastructure\Repository\LocaleMessageRepository::findByLocales">findByLocales</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleMessageRepository.php.html#46"><abbr title="App\Infrastructure\Repository\LocaleMessageRepository::findByLocaleIndexedByCode">findByLocaleIndexedByCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleMessageRepository.php.html#61"><abbr title="App\Infrastructure\Repository\LocaleMessageRepository::getCodes">getCodes</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleRepository.php.html#15"><abbr title="App\Infrastructure\Repository\LocaleRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleRepository.php.html#24"><abbr title="App\Infrastructure\Repository\LocaleRepository::getDefaultLocale">getDefaultLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LocaleRepository.php.html#36"><abbr title="App\Infrastructure\Repository\LocaleRepository::getAvailableLocales">getAvailableLocales</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#24"><abbr title="App\Infrastructure\Repository\LogRepository::getTopViewedPointOfInterest">getTopViewedPointOfInterest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#52"><abbr title="App\Infrastructure\Repository\LogRepository::getPremiumCountByType">getPremiumCountByType</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#77"><abbr title="App\Infrastructure\Repository\LogRepository::countPremiumByPayment">countPremiumByPayment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#13"><abbr title="App\Infrastructure\Repository\MediaRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MediaRepository.php.html#18"><abbr title="App\Infrastructure\Repository\MediaRepository::findAllWithFilename">findAllWithFilename</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MetadataRepository.php.html#16"><abbr title="App\Infrastructure\Repository\MetadataRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MobileAdRepository.php.html#15"><abbr title="App\Infrastructure\Repository\MobileAdRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/MobileAdRepository.php.html#21"><abbr title="App\Infrastructure\Repository\MobileAdRepository::findByLocaleAndGps">findByLocaleAndGps</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/NotificationChannelRepository.php.html#19"><abbr title="App\Infrastructure\Repository\NotificationChannelRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OffmapCategoryRepository.php.html#13"><abbr title="App\Infrastructure\Repository\OffmapCategoryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OffmapRepository.php.html#21"><abbr title="App\Infrastructure\Repository\OffmapRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OwnershipRequestRepository.php.html#18"><abbr title="App\Infrastructure\Repository\OwnershipRequestRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/OwnershipRequestRepository.php.html#27"><abbr title="App\Infrastructure\Repository\OwnershipRequestRepository::uncertifiedOwnershipCount">uncertifiedOwnershipCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PartnerRepository.php.html#15"><abbr title="App\Infrastructure\Repository\PartnerRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PaymentRepository.php.html#19"><abbr title="App\Infrastructure\Repository\PaymentRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PaymentRepository.php.html#27"><abbr title="App\Infrastructure\Repository\PaymentRepository::findOrderByIntentId">findOrderByIntentId</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PaymentRepository.php.html#37"><abbr title="App\Infrastructure\Repository\PaymentRepository::findUnsuccessfulByPerson">findUnsuccessfulByPerson</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PaymentRepository.php.html#52"><abbr title="App\Infrastructure\Repository\PaymentRepository::sumByEvent">sumByEvent</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#26"><abbr title="App\Infrastructure\Repository\PersonPointOfInterestRepository::getLatestFavoritesWithPictures">getLatestFavoritesWithPictures</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#76"><abbr title="App\Infrastructure\Repository\PersonPointOfInterestRepository::getTopFavoritedPointOfInterest">getTopFavoritedPointOfInterest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#98"><abbr title="App\Infrastructure\Repository\PersonPointOfInterestRepository::getRemoteIds">getRemoteIds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonPromoCodeRepository.php.html#18"><abbr title="App\Infrastructure\Repository\PersonPromoCodeRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#50"><abbr title="App\Infrastructure\Repository\PersonRepository::countPeopleWithAvatar">countPeopleWithAvatar</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#62"><abbr title="App\Infrastructure\Repository\PersonRepository::getRandomPeople">getRandomPeople</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#75"><abbr title="App\Infrastructure\Repository\PersonRepository::findByPremiumDateBounds">findByPremiumDateBounds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#96"><abbr title="App\Infrastructure\Repository\PersonRepository::findByRegisterDateBounds">findByRegisterDateBounds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#117"><abbr title="App\Infrastructure\Repository\PersonRepository::countActivePremium">countActivePremium</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#133"><abbr title="App\Infrastructure\Repository\PersonRepository::countRenewedActivePremium">countRenewedActivePremium</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#167"><abbr title="App\Infrastructure\Repository\PersonRepository::countMembersBySource">countMembersBySource</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#187"><abbr title="App\Infrastructure\Repository\PersonRepository::countMembersByLocale">countMembersByLocale</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#207"><abbr title="App\Infrastructure\Repository\PersonRepository::findForAvatarImport">findForAvatarImport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#218"><abbr title="App\Infrastructure\Repository\PersonRepository::findForCoverImport">findForCoverImport</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PictureRepository.php.html#69"><abbr title="App\Infrastructure\Repository\PictureRepository::uncertifiedPicturesCount">uncertifiedPicturesCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PictureRepository.php.html#82"><abbr title="App\Infrastructure\Repository\PictureRepository::countCreatedPictureByDate">countCreatedPictureByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestGpsRepository.php.html#41"><abbr title="App\Infrastructure\Repository\PointOfInterestGpsRepository::isInGps">isInGps</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#58"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::getMyPointOfInterest">getMyPointOfInterest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#104"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::uncertifiedPointOfInterestCount">uncertifiedPointOfInterestCount</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#115"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::countCreatedPointOfInterestByDate">countCreatedPointOfInterestByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#132"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::countUpdatedPointOfInterestByDate">countUpdatedPointOfInterestByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#151"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::countWithRevision">countWithRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#163"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::findAllWithComments">findAllWithComments</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RegionRepository.php.html#13"><abbr title="App\Infrastructure\Repository\RegionRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#33"><abbr title="App\Infrastructure\Repository\ResetPasswordRequestRepository::add">add</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#45"><abbr title="App\Infrastructure\Repository\ResetPasswordRequestRepository::remove">remove</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionAttributeRepository.php.html#24"><abbr title="App\Infrastructure\Repository\RevisionAttributeRepository::getAllQuery">getAllQuery</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionAttributeRepository.php.html#34"><abbr title="App\Infrastructure\Repository\RevisionAttributeRepository::findByAttributeByCategoryCode">findByAttributeByCategoryCode</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#138"><abbr title="App\Infrastructure\Repository\RevisionRepository::getMaxRevisionByPointOfInterest">getMaxRevisionByPointOfInterest</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#154"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionToRefresh">getRevisionToRefresh</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#245"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromOffmap">getRevisionsFromOffmap</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#295"><abbr title="App\Infrastructure\Repository\RevisionRepository::isBadSQL">isBadSQL</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#304"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromDirectoryDepartment">getRevisionsFromDirectoryDepartment</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#315"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromDepartmentQueryBuilder">getRevisionsFromDepartmentQueryBuilder</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#338"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionByDistance">getRevisionByDistance</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#359"><abbr title="App\Infrastructure\Repository\RevisionRepository::findAllGps">findAllGps</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#372"><abbr title="App\Infrastructure\Repository\RevisionRepository::countCreatedHostByDate">countCreatedHostByDate</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TeamMemberRepository.php.html#15"><abbr title="App\Infrastructure\Repository\TeamMemberRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCategoryRepository.php.html#16"><abbr title="App\Infrastructure\Repository\TripCategoryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCommentRepository.php.html#12"><abbr title="App\Infrastructure\Repository\TripCommentRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripCountryRepository.php.html#16"><abbr title="App\Infrastructure\Repository\TripCountryRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripMapPointRepository.php.html#16"><abbr title="App\Infrastructure\Repository\TripMapPointRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripRepository.php.html#32"><abbr title="App\Infrastructure\Repository\TripRepository::getTopCopiedTrips">getTopCopiedTrips</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/TripRepository.php.html#50"><abbr title="App\Infrastructure\Repository\TripRepository::findAllWithoutStartEnd">findAllWithoutStartEnd</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/VehicleTypeRepository.php.html#13"><abbr title="App\Infrastructure\Repository\VehicleTypeRepository::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="Repository/WebAdRepository.php.html#21"><abbr title="App\Infrastructure\Repository\WebAdRepository::getAds">getAds</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="EventListener/PictureSubscriber.php.html#31"><abbr title="App\Infrastructure\EventListener\PictureSubscriber::preRemove">preRemove</abbr></a></td><td class="text-right">42%</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#162"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::findAllForExport">findAllForExport</abbr></a></td><td class="text-right">53%</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#66"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::findAllWithStats">findAllWithStats</abbr></a></td><td class="text-right">54%</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#55"><abbr title="App\Infrastructure\Repository\PersonPointOfInterestRepository::getIsFavorite">getIsFavorite</abbr></a></td><td class="text-right">83%</td></tr>
+       <tr><td><a href="EventListener/LogEventListener.php.html#157"><abbr title="App\Infrastructure\EventListener\LogEventListener::postPersist">postPersist</abbr></a></td><td class="text-right">85%</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#27"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::getStatsByPartner">getStatsByPartner</abbr></a></td><td class="text-right">86%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="Repository/RevisionRepository.php.html#245"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromOffmap">getRevisionsFromOffmap</abbr></a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#66"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::findAllWithStats">findAllWithStats</abbr></a></td><td class="text-right">22</td></tr>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#33"><abbr title="App\Infrastructure\EventListener\ConvertImageEventListener::onVichUploaderPreUpload">onVichUploaderPreUpload</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#52"><abbr title="App\Infrastructure\Repository\CommentRepository::getCommentsByUserAndEntity">getCommentsByUserAndEntity</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repository/MobileAdRepository.php.html#21"><abbr title="App\Infrastructure\Repository\MobileAdRepository::findByLocaleAndGps">findByLocaleAndGps</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repository/WebAdRepository.php.html#21"><abbr title="App\Infrastructure\Repository\WebAdRepository::getAds">getAds</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#295"><abbr title="App\Infrastructure\Repository\RevisionRepository::isBadSQL">isBadSQL</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#315"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromDepartmentQueryBuilder">getRevisionsFromDepartmentQueryBuilder</abbr></a></td><td class="text-right">12</td></tr>
+       <tr><td><a href="EventListener/ConvertImageEventListener.php.html#74"><abbr title="App\Infrastructure\EventListener\ConvertImageEventListener::onVichUploaderPostUpload">onVichUploaderPostUpload</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#40"><abbr title="App\Infrastructure\Repository\ActivityRepository::countActiveActivity">countActiveActivity</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/ActivityRepository.php.html#55"><abbr title="App\Infrastructure\Repository\ActivityRepository::countCreatedActivityByDate">countCreatedActivityByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/CommentRepository.php.html#124"><abbr title="App\Infrastructure\Repository\CommentRepository::countCreatedCommentByDate">countCreatedCommentByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/LogRepository.php.html#52"><abbr title="App\Infrastructure\Repository\LogRepository::getPremiumCountByType">getPremiumCountByType</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#75"><abbr title="App\Infrastructure\Repository\PersonRepository::findByPremiumDateBounds">findByPremiumDateBounds</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#117"><abbr title="App\Infrastructure\Repository\PersonRepository::countActivePremium">countActivePremium</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PersonRepository.php.html#133"><abbr title="App\Infrastructure\Repository\PersonRepository::countRenewedActivePremium">countRenewedActivePremium</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PictureRepository.php.html#82"><abbr title="App\Infrastructure\Repository\PictureRepository::countCreatedPictureByDate">countCreatedPictureByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#115"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::countCreatedPointOfInterestByDate">countCreatedPointOfInterestByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PointOfInterestRepository.php.html#132"><abbr title="App\Infrastructure\Repository\PointOfInterestRepository::countUpdatedPointOfInterestByDate">countUpdatedPointOfInterestByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#33"><abbr title="App\Infrastructure\Repository\ResetPasswordRequestRepository::add">add</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/ResetPasswordRequestRepository.php.html#45"><abbr title="App\Infrastructure\Repository\ResetPasswordRequestRepository::remove">remove</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#304"><abbr title="App\Infrastructure\Repository\RevisionRepository::getRevisionsFromDirectoryDepartment">getRevisionsFromDirectoryDepartment</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/RevisionRepository.php.html#372"><abbr title="App\Infrastructure\Repository\RevisionRepository::countCreatedHostByDate">countCreatedHostByDate</abbr></a></td><td class="text-right">6</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#162"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::findAllForExport">findAllForExport</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="EventListener/LogEventListener.php.html#157"><abbr title="App\Infrastructure\EventListener\LogEventListener::postPersist">postPersist</abbr></a></td><td class="text-right">5</td></tr>
+       <tr><td><a href="EventListener/PictureSubscriber.php.html#31"><abbr title="App\Infrastructure\EventListener\PictureSubscriber::preRemove">preRemove</abbr></a></td><td class="text-right">4</td></tr>
+       <tr><td><a href="Repository/PersonPointOfInterestRepository.php.html#55"><abbr title="App\Infrastructure\Repository\PersonPointOfInterestRepository::getIsFavorite">getIsFavorite</abbr></a></td><td class="text-right">3</td></tr>
+       <tr><td><a href="Repository/PromoCodeRepository.php.html#27"><abbr title="App\Infrastructure\Repository\PromoCodeRepository::getStatsByPartner">getStatsByPartner</abbr></a></td><td class="text-right">3</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.26</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.4</a> and <a href="https://phpunit.de/">PHPUnit 9.6.8</a> at Tue Jun 6 15:30:20 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../_js/jquery.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../_js/d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../_js/nv.d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([34,5,1,3,0,0,2,3,0,0,1,13], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([98,0,0,0,0,1,2,0,0,3,0,49], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,7,"<a href=\"EventListener\/ConvertImageEventListener.php.html#18\">App\\Infrastructure\\EventListener\\ConvertImageEventListener<\/a>"],[95.3125,18,"<a href=\"EventListener\/LogEventListener.php.html#41\">App\\Infrastructure\\EventListener\\LogEventListener<\/a>"],[63.63636363636363,5,"<a href=\"EventListener\/PictureSubscriber.php.html#16\">App\\Infrastructure\\EventListener\\PictureSubscriber<\/a>"],[100,3,"<a href=\"EventListener\/UuidGeneratorSubscriber.php.html#14\">App\\Infrastructure\\EventListener\\UuidGeneratorSubscriber<\/a>"],[0,6,"<a href=\"Repository\/ActivityRepository.php.html#17\">App\\Infrastructure\\Repository\\ActivityRepository<\/a>"],[0,1,"<a href=\"Repository\/ActivityTranslationRepository.php.html#11\">App\\Infrastructure\\Repository\\ActivityTranslationRepository<\/a>"],[0,1,"<a href=\"Repository\/ActivityTypeRepository.php.html#11\">App\\Infrastructure\\Repository\\ActivityTypeRepository<\/a>"],[0,1,"<a href=\"Repository\/AttributeCategoryRepository.php.html#13\">App\\Infrastructure\\Repository\\AttributeCategoryRepository<\/a>"],[100,2,"<a href=\"Repository\/AttributeRepository.php.html#14\">App\\Infrastructure\\Repository\\AttributeRepository<\/a>"],[100,1,"<a href=\"Repository\/AttributeTranslationRepository.php.html#13\">App\\Infrastructure\\Repository\\AttributeTranslationRepository<\/a>"],[0,2,"<a href=\"Repository\/AwardRepository.php.html#12\">App\\Infrastructure\\Repository\\AwardRepository<\/a>"],[0,1,"<a href=\"Repository\/CamperVanTypeRepository.php.html#11\">App\\Infrastructure\\Repository\\CamperVanTypeRepository<\/a>"],[4.838709677419355,9,"<a href=\"Repository\/CommentRepository.php.html#21\">App\\Infrastructure\\Repository\\CommentRepository<\/a>"],[0,2,"<a href=\"Repository\/CommentTranslationRepository.php.html#15\">App\\Infrastructure\\Repository\\CommentTranslationRepository<\/a>"],[0,1,"<a href=\"Repository\/CountryRepository.php.html#11\">App\\Infrastructure\\Repository\\CountryRepository<\/a>"],[100,1,"<a href=\"Repository\/CurrencyTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\CurrencyTypeRepository<\/a>"],[0,2,"<a href=\"Repository\/DirectoryCountryRepository.php.html#15\">App\\Infrastructure\\Repository\\DirectoryCountryRepository<\/a>"],[0,1,"<a href=\"Repository\/DirectoryCountryTranslationRepository.php.html#14\">App\\Infrastructure\\Repository\\DirectoryCountryTranslationRepository<\/a>"],[0,2,"<a href=\"Repository\/DirectoryDepartmentRepository.php.html#15\">App\\Infrastructure\\Repository\\DirectoryDepartmentRepository<\/a>"],[0,1,"<a href=\"Repository\/DirectoryDepartmentTranslationRepository.php.html#14\">App\\Infrastructure\\Repository\\DirectoryDepartmentTranslationRepository<\/a>"],[0,1,"<a href=\"Repository\/EnumerationTranslationRepository.php.html#11\">App\\Infrastructure\\Repository\\EnumerationTranslationRepository<\/a>"],[100,1,"<a href=\"Repository\/FloorQualityRepository.php.html#13\">App\\Infrastructure\\Repository\\FloorQualityRepository<\/a>"],[100,1,"<a href=\"Repository\/FloorTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\FloorTypeRepository<\/a>"],[0,1,"<a href=\"Repository\/InvoiceRepository.php.html#11\">App\\Infrastructure\\Repository\\InvoiceRepository<\/a>"],[100,1,"<a href=\"Repository\/LabelRepository.php.html#13\">App\\Infrastructure\\Repository\\LabelRepository<\/a>"],[0,4,"<a href=\"Repository\/LocaleMessageRepository.php.html#15\">App\\Infrastructure\\Repository\\LocaleMessageRepository<\/a>"],[0,3,"<a href=\"Repository\/LocaleRepository.php.html#13\">App\\Infrastructure\\Repository\\LocaleRepository<\/a>"],[1.6666666666666667,5,"<a href=\"Repository\/LogRepository.php.html#17\">App\\Infrastructure\\Repository\\LogRepository<\/a>"],[0,2,"<a href=\"Repository\/MediaRepository.php.html#11\">App\\Infrastructure\\Repository\\MediaRepository<\/a>"],[0,1,"<a href=\"Repository\/MetadataRepository.php.html#14\">App\\Infrastructure\\Repository\\MetadataRepository<\/a>"],[0,5,"<a href=\"Repository\/MobileAdRepository.php.html#13\">App\\Infrastructure\\Repository\\MobileAdRepository<\/a>"],[100,1,"<a href=\"Repository\/NetworkRepository.php.html#13\">App\\Infrastructure\\Repository\\NetworkRepository<\/a>"],[0,1,"<a href=\"Repository\/NotificationChannelRepository.php.html#13\">App\\Infrastructure\\Repository\\NotificationChannelRepository<\/a>"],[0,1,"<a href=\"Repository\/OffmapCategoryRepository.php.html#11\">App\\Infrastructure\\Repository\\OffmapCategoryRepository<\/a>"],[0,1,"<a href=\"Repository\/OffmapRepository.php.html#14\">App\\Infrastructure\\Repository\\OffmapRepository<\/a>"],[0,2,"<a href=\"Repository\/OwnershipRequestRepository.php.html#16\">App\\Infrastructure\\Repository\\OwnershipRequestRepository<\/a>"],[100,1,"<a href=\"Repository\/ParkingTimeRepository.php.html#13\">App\\Infrastructure\\Repository\\ParkingTimeRepository<\/a>"],[100,1,"<a href=\"Repository\/ParkingTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\ParkingTypeRepository<\/a>"],[0,1,"<a href=\"Repository\/PartnerRepository.php.html#13\">App\\Infrastructure\\Repository\\PartnerRepository<\/a>"],[0,4,"<a href=\"Repository\/PaymentRepository.php.html#14\">App\\Infrastructure\\Repository\\PaymentRepository<\/a>"],[100,1,"<a href=\"Repository\/PaymentTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\PaymentTypeRepository<\/a>"],[21.153846153846153,7,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#16\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository<\/a>"],[0,1,"<a href=\"Repository\/PersonPromoCodeRepository.php.html#11\">App\\Infrastructure\\Repository\\PersonPromoCodeRepository<\/a>"],[8.130081300813007,15,"<a href=\"Repository\/PersonRepository.php.html#20\">App\\Infrastructure\\Repository\\PersonRepository<\/a>"],[60,6,"<a href=\"Repository\/PictureRepository.php.html#22\">App\\Infrastructure\\Repository\\PictureRepository<\/a>"],[100,4,"<a href=\"Repository\/PointOfInterestCommentRepository.php.html#13\">App\\Infrastructure\\Repository\\PointOfInterestCommentRepository<\/a>"],[58.82352941176471,4,"<a href=\"Repository\/PointOfInterestGpsRepository.php.html#19\">App\\Infrastructure\\Repository\\PointOfInterestGpsRepository<\/a>"],[18,10,"<a href=\"Repository\/PointOfInterestRepository.php.html#24\">App\\Infrastructure\\Repository\\PointOfInterestRepository<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\PointOfInterestTypeRepository<\/a>"],[62.121212121212125,19,"<a href=\"Repository\/PromoCodeRepository.php.html#15\">App\\Infrastructure\\Repository\\PromoCodeRepository<\/a>"],[0,1,"<a href=\"Repository\/RegionRepository.php.html#11\">App\\Infrastructure\\Repository\\RegionRepository<\/a>"],[25,6,"<a href=\"Repository\/ResetPasswordRequestRepository.php.html#20\">App\\Infrastructure\\Repository\\ResetPasswordRequestRepository<\/a>"],[7.6923076923076925,3,"<a href=\"Repository\/RevisionAttributeRepository.php.html#14\">App\\Infrastructure\\Repository\\RevisionAttributeRepository<\/a>"],[53.73831775700935,33,"<a href=\"Repository\/RevisionRepository.php.html#31\">App\\Infrastructure\\Repository\\RevisionRepository<\/a>"],[0,1,"<a href=\"Repository\/TeamMemberRepository.php.html#13\">App\\Infrastructure\\Repository\\TeamMemberRepository<\/a>"],[0,1,"<a href=\"Repository\/TripCategoryRepository.php.html#14\">App\\Infrastructure\\Repository\\TripCategoryRepository<\/a>"],[0,1,"<a href=\"Repository\/TripCommentRepository.php.html#10\">App\\Infrastructure\\Repository\\TripCommentRepository<\/a>"],[0,1,"<a href=\"Repository\/TripCountryRepository.php.html#14\">App\\Infrastructure\\Repository\\TripCountryRepository<\/a>"],[0,1,"<a href=\"Repository\/TripMapPointRepository.php.html#11\">App\\Infrastructure\\Repository\\TripMapPointRepository<\/a>"],[29.166666666666668,4,"<a href=\"Repository\/TripRepository.php.html#13\">App\\Infrastructure\\Repository\\TripRepository<\/a>"],[0,1,"<a href=\"Repository\/VehicleTypeRepository.php.html#11\">App\\Infrastructure\\Repository\\VehicleTypeRepository<\/a>"],[2.631578947368421,5,"<a href=\"Repository\/WebAdRepository.php.html#14\">App\\Infrastructure\\Repository\\WebAdRepository<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"EventListener\/ConvertImageEventListener.php.html#20\">App\\Infrastructure\\EventListener\\ConvertImageEventListener::__construct<\/a>"],[0,4,"<a href=\"EventListener\/ConvertImageEventListener.php.html#33\">App\\Infrastructure\\EventListener\\ConvertImageEventListener::onVichUploaderPreUpload<\/a>"],[0,2,"<a href=\"EventListener\/ConvertImageEventListener.php.html#74\">App\\Infrastructure\\EventListener\\ConvertImageEventListener::onVichUploaderPostUpload<\/a>"],[100,1,"<a href=\"EventListener\/LogEventListener.php.html#72\">App\\Infrastructure\\EventListener\\LogEventListener::__construct<\/a>"],[100,12,"<a href=\"EventListener\/LogEventListener.php.html#84\">App\\Infrastructure\\EventListener\\LogEventListener::onKernelView<\/a>"],[85.71428571428571,5,"<a href=\"EventListener\/LogEventListener.php.html#157\">App\\Infrastructure\\EventListener\\LogEventListener::postPersist<\/a>"],[100,1,"<a href=\"EventListener\/PictureSubscriber.php.html#18\">App\\Infrastructure\\EventListener\\PictureSubscriber::__construct<\/a>"],[100,1,"<a href=\"EventListener\/PictureSubscriber.php.html#24\">App\\Infrastructure\\EventListener\\PictureSubscriber::getSubscribedEvents<\/a>"],[42.857142857142854,3,"<a href=\"EventListener\/PictureSubscriber.php.html#31\">App\\Infrastructure\\EventListener\\PictureSubscriber::preRemove<\/a>"],[100,1,"<a href=\"EventListener\/UuidGeneratorSubscriber.php.html#19\">App\\Infrastructure\\EventListener\\UuidGeneratorSubscriber::getSubscribedEvents<\/a>"],[100,2,"<a href=\"EventListener\/UuidGeneratorSubscriber.php.html#29\">App\\Infrastructure\\EventListener\\UuidGeneratorSubscriber::prePersist<\/a>"],[0,1,"<a href=\"Repository\/ActivityRepository.php.html#19\">App\\Infrastructure\\Repository\\ActivityRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/ActivityRepository.php.html#28\">App\\Infrastructure\\Repository\\ActivityRepository::uncertifiedActivityCount<\/a>"],[0,2,"<a href=\"Repository\/ActivityRepository.php.html#40\">App\\Infrastructure\\Repository\\ActivityRepository::countActiveActivity<\/a>"],[0,2,"<a href=\"Repository\/ActivityRepository.php.html#55\">App\\Infrastructure\\Repository\\ActivityRepository::countCreatedActivityByDate<\/a>"],[0,1,"<a href=\"Repository\/ActivityTranslationRepository.php.html#13\">App\\Infrastructure\\Repository\\ActivityTranslationRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/ActivityTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\ActivityTypeRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/AttributeCategoryRepository.php.html#15\">App\\Infrastructure\\Repository\\AttributeCategoryRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/AttributeRepository.php.html#16\">App\\Infrastructure\\Repository\\AttributeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/AttributeRepository.php.html#21\">App\\Infrastructure\\Repository\\AttributeRepository::findFavoriteByCategoryCode<\/a>"],[100,1,"<a href=\"Repository\/AttributeTranslationRepository.php.html#15\">App\\Infrastructure\\Repository\\AttributeTranslationRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/AwardRepository.php.html#14\">App\\Infrastructure\\Repository\\AwardRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/AwardRepository.php.html#19\">App\\Infrastructure\\Repository\\AwardRepository::findByPointOfInterest<\/a>"],[0,1,"<a href=\"Repository\/CamperVanTypeRepository.php.html#16\">App\\Infrastructure\\Repository\\CamperVanTypeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/CommentRepository.php.html#25\">App\\Infrastructure\\Repository\\CommentRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/CommentRepository.php.html#35\">App\\Infrastructure\\Repository\\CommentRepository::getAllQuery<\/a>"],[0,4,"<a href=\"Repository\/CommentRepository.php.html#52\">App\\Infrastructure\\Repository\\CommentRepository::getCommentsByUserAndEntity<\/a>"],[0,1,"<a href=\"Repository\/CommentRepository.php.html#112\">App\\Infrastructure\\Repository\\CommentRepository::uncertifiedCommentsCount<\/a>"],[0,2,"<a href=\"Repository\/CommentRepository.php.html#124\">App\\Infrastructure\\Repository\\CommentRepository::countCreatedCommentByDate<\/a>"],[0,1,"<a href=\"Repository\/CommentTranslationRepository.php.html#17\">App\\Infrastructure\\Repository\\CommentTranslationRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/CommentTranslationRepository.php.html#22\">App\\Infrastructure\\Repository\\CommentTranslationRepository::findNotBy<\/a>"],[0,1,"<a href=\"Repository\/CountryRepository.php.html#13\">App\\Infrastructure\\Repository\\CountryRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/CurrencyTypeRepository.php.html#15\">App\\Infrastructure\\Repository\\CurrencyTypeRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/DirectoryCountryRepository.php.html#17\">App\\Infrastructure\\Repository\\DirectoryCountryRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/DirectoryCountryRepository.php.html#25\">App\\Infrastructure\\Repository\\DirectoryCountryRepository::findOneBySlug<\/a>"],[0,1,"<a href=\"Repository\/DirectoryCountryTranslationRepository.php.html#16\">App\\Infrastructure\\Repository\\DirectoryCountryTranslationRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/DirectoryDepartmentRepository.php.html#17\">App\\Infrastructure\\Repository\\DirectoryDepartmentRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/DirectoryDepartmentRepository.php.html#25\">App\\Infrastructure\\Repository\\DirectoryDepartmentRepository::findOneBySlug<\/a>"],[0,1,"<a href=\"Repository\/DirectoryDepartmentTranslationRepository.php.html#16\">App\\Infrastructure\\Repository\\DirectoryDepartmentTranslationRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/EnumerationTranslationRepository.php.html#13\">App\\Infrastructure\\Repository\\EnumerationTranslationRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/FloorQualityRepository.php.html#15\">App\\Infrastructure\\Repository\\FloorQualityRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/FloorTypeRepository.php.html#15\">App\\Infrastructure\\Repository\\FloorTypeRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/InvoiceRepository.php.html#16\">App\\Infrastructure\\Repository\\InvoiceRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/LabelRepository.php.html#15\">App\\Infrastructure\\Repository\\LabelRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/LocaleMessageRepository.php.html#17\">App\\Infrastructure\\Repository\\LocaleMessageRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/LocaleMessageRepository.php.html#27\">App\\Infrastructure\\Repository\\LocaleMessageRepository::findByLocales<\/a>"],[0,1,"<a href=\"Repository\/LocaleMessageRepository.php.html#46\">App\\Infrastructure\\Repository\\LocaleMessageRepository::findByLocaleIndexedByCode<\/a>"],[0,1,"<a href=\"Repository\/LocaleMessageRepository.php.html#61\">App\\Infrastructure\\Repository\\LocaleMessageRepository::getCodes<\/a>"],[0,1,"<a href=\"Repository\/LocaleRepository.php.html#15\">App\\Infrastructure\\Repository\\LocaleRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/LocaleRepository.php.html#24\">App\\Infrastructure\\Repository\\LocaleRepository::getDefaultLocale<\/a>"],[0,1,"<a href=\"Repository\/LocaleRepository.php.html#36\">App\\Infrastructure\\Repository\\LocaleRepository::getAvailableLocales<\/a>"],[100,1,"<a href=\"Repository\/LogRepository.php.html#19\">App\\Infrastructure\\Repository\\LogRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/LogRepository.php.html#24\">App\\Infrastructure\\Repository\\LogRepository::getTopViewedPointOfInterest<\/a>"],[0,2,"<a href=\"Repository\/LogRepository.php.html#52\">App\\Infrastructure\\Repository\\LogRepository::getPremiumCountByType<\/a>"],[0,1,"<a href=\"Repository\/LogRepository.php.html#77\">App\\Infrastructure\\Repository\\LogRepository::countPremiumByPayment<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#13\">App\\Infrastructure\\Repository\\MediaRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/MediaRepository.php.html#18\">App\\Infrastructure\\Repository\\MediaRepository::findAllWithFilename<\/a>"],[0,1,"<a href=\"Repository\/MetadataRepository.php.html#16\">App\\Infrastructure\\Repository\\MetadataRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/MobileAdRepository.php.html#15\">App\\Infrastructure\\Repository\\MobileAdRepository::__construct<\/a>"],[0,4,"<a href=\"Repository\/MobileAdRepository.php.html#21\">App\\Infrastructure\\Repository\\MobileAdRepository::findByLocaleAndGps<\/a>"],[100,1,"<a href=\"Repository\/NetworkRepository.php.html#15\">App\\Infrastructure\\Repository\\NetworkRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/NotificationChannelRepository.php.html#19\">App\\Infrastructure\\Repository\\NotificationChannelRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OffmapCategoryRepository.php.html#13\">App\\Infrastructure\\Repository\\OffmapCategoryRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OffmapRepository.php.html#21\">App\\Infrastructure\\Repository\\OffmapRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OwnershipRequestRepository.php.html#18\">App\\Infrastructure\\Repository\\OwnershipRequestRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/OwnershipRequestRepository.php.html#27\">App\\Infrastructure\\Repository\\OwnershipRequestRepository::uncertifiedOwnershipCount<\/a>"],[100,1,"<a href=\"Repository\/ParkingTimeRepository.php.html#15\">App\\Infrastructure\\Repository\\ParkingTimeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/ParkingTypeRepository.php.html#15\">App\\Infrastructure\\Repository\\ParkingTypeRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/PartnerRepository.php.html#15\">App\\Infrastructure\\Repository\\PartnerRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/PaymentRepository.php.html#19\">App\\Infrastructure\\Repository\\PaymentRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/PaymentRepository.php.html#27\">App\\Infrastructure\\Repository\\PaymentRepository::findOrderByIntentId<\/a>"],[0,1,"<a href=\"Repository\/PaymentRepository.php.html#37\">App\\Infrastructure\\Repository\\PaymentRepository::findUnsuccessfulByPerson<\/a>"],[0,1,"<a href=\"Repository\/PaymentRepository.php.html#52\">App\\Infrastructure\\Repository\\PaymentRepository::sumByEvent<\/a>"],[100,1,"<a href=\"Repository\/PaymentTypeRepository.php.html#15\">App\\Infrastructure\\Repository\\PaymentTypeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#18\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#26\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository::getLatestFavoritesWithPictures<\/a>"],[83.33333333333334,3,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#55\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository::getIsFavorite<\/a>"],[0,1,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#76\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository::getTopFavoritedPointOfInterest<\/a>"],[0,1,"<a href=\"Repository\/PersonPointOfInterestRepository.php.html#98\">App\\Infrastructure\\Repository\\PersonPointOfInterestRepository::getRemoteIds<\/a>"],[0,1,"<a href=\"Repository\/PersonPromoCodeRepository.php.html#18\">App\\Infrastructure\\Repository\\PersonPromoCodeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PersonRepository.php.html#22\">App\\Infrastructure\\Repository\\PersonRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PersonRepository.php.html#31\">App\\Infrastructure\\Repository\\PersonRepository::getRank<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#50\">App\\Infrastructure\\Repository\\PersonRepository::countPeopleWithAvatar<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#62\">App\\Infrastructure\\Repository\\PersonRepository::getRandomPeople<\/a>"],[0,2,"<a href=\"Repository\/PersonRepository.php.html#75\">App\\Infrastructure\\Repository\\PersonRepository::findByPremiumDateBounds<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#96\">App\\Infrastructure\\Repository\\PersonRepository::findByRegisterDateBounds<\/a>"],[0,2,"<a href=\"Repository\/PersonRepository.php.html#117\">App\\Infrastructure\\Repository\\PersonRepository::countActivePremium<\/a>"],[0,2,"<a href=\"Repository\/PersonRepository.php.html#133\">App\\Infrastructure\\Repository\\PersonRepository::countRenewedActivePremium<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#167\">App\\Infrastructure\\Repository\\PersonRepository::countMembersBySource<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#187\">App\\Infrastructure\\Repository\\PersonRepository::countMembersByLocale<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#207\">App\\Infrastructure\\Repository\\PersonRepository::findForAvatarImport<\/a>"],[0,1,"<a href=\"Repository\/PersonRepository.php.html#218\">App\\Infrastructure\\Repository\\PersonRepository::findForCoverImport<\/a>"],[100,1,"<a href=\"Repository\/PictureRepository.php.html#24\">App\\Infrastructure\\Repository\\PictureRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PictureRepository.php.html#30\">App\\Infrastructure\\Repository\\PictureRepository::getMyPictures<\/a>"],[100,1,"<a href=\"Repository\/PictureRepository.php.html#54\">App\\Infrastructure\\Repository\\PictureRepository::prepareForCertifiedPicture<\/a>"],[0,1,"<a href=\"Repository\/PictureRepository.php.html#69\">App\\Infrastructure\\Repository\\PictureRepository::uncertifiedPicturesCount<\/a>"],[0,2,"<a href=\"Repository\/PictureRepository.php.html#82\">App\\Infrastructure\\Repository\\PictureRepository::countCreatedPictureByDate<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestCommentRepository.php.html#15\">App\\Infrastructure\\Repository\\PointOfInterestCommentRepository::__construct<\/a>"],[100,2,"<a href=\"Repository\/PointOfInterestCommentRepository.php.html#25\">App\\Infrastructure\\Repository\\PointOfInterestCommentRepository::getAuthorComments<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestCommentRepository.php.html#47\">App\\Infrastructure\\Repository\\PointOfInterestCommentRepository::getLastComments<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestGpsRepository.php.html#21\">App\\Infrastructure\\Repository\\PointOfInterestGpsRepository::__construct<\/a>"],[100,2,"<a href=\"Repository\/PointOfInterestGpsRepository.php.html#26\">App\\Infrastructure\\Repository\\PointOfInterestGpsRepository::findByCouple<\/a>"],[0,1,"<a href=\"Repository\/PointOfInterestGpsRepository.php.html#41\">App\\Infrastructure\\Repository\\PointOfInterestGpsRepository::isInGps<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#26\">App\\Infrastructure\\Repository\\PointOfInterestRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#34\">App\\Infrastructure\\Repository\\PointOfInterestRepository::getAdminListOutputQueryBuilder<\/a>"],[0,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#58\">App\\Infrastructure\\Repository\\PointOfInterestRepository::getMyPointOfInterest<\/a>"],[0,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#104\">App\\Infrastructure\\Repository\\PointOfInterestRepository::uncertifiedPointOfInterestCount<\/a>"],[0,2,"<a href=\"Repository\/PointOfInterestRepository.php.html#115\">App\\Infrastructure\\Repository\\PointOfInterestRepository::countCreatedPointOfInterestByDate<\/a>"],[0,2,"<a href=\"Repository\/PointOfInterestRepository.php.html#132\">App\\Infrastructure\\Repository\\PointOfInterestRepository::countUpdatedPointOfInterestByDate<\/a>"],[0,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#151\">App\\Infrastructure\\Repository\\PointOfInterestRepository::countWithRevision<\/a>"],[0,1,"<a href=\"Repository\/PointOfInterestRepository.php.html#163\">App\\Infrastructure\\Repository\\PointOfInterestRepository::findAllWithComments<\/a>"],[100,1,"<a href=\"Repository\/PointOfInterestTypeRepository.php.html#15\">App\\Infrastructure\\Repository\\PointOfInterestTypeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/PromoCodeRepository.php.html#17\">App\\Infrastructure\\Repository\\PromoCodeRepository::__construct<\/a>"],[86.66666666666667,3,"<a href=\"Repository\/PromoCodeRepository.php.html#27\">App\\Infrastructure\\Repository\\PromoCodeRepository::getStatsByPartner<\/a>"],[54.285714285714285,11,"<a href=\"Repository\/PromoCodeRepository.php.html#66\">App\\Infrastructure\\Repository\\PromoCodeRepository::findAllWithStats<\/a>"],[53.333333333333336,4,"<a href=\"Repository\/PromoCodeRepository.php.html#162\">App\\Infrastructure\\Repository\\PromoCodeRepository::findAllForExport<\/a>"],[0,1,"<a href=\"Repository\/RegionRepository.php.html#13\">App\\Infrastructure\\Repository\\RegionRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/ResetPasswordRequestRepository.php.html#24\">App\\Infrastructure\\Repository\\ResetPasswordRequestRepository::__construct<\/a>"],[0,2,"<a href=\"Repository\/ResetPasswordRequestRepository.php.html#33\">App\\Infrastructure\\Repository\\ResetPasswordRequestRepository::add<\/a>"],[0,2,"<a href=\"Repository\/ResetPasswordRequestRepository.php.html#45\">App\\Infrastructure\\Repository\\ResetPasswordRequestRepository::remove<\/a>"],[100,1,"<a href=\"Repository\/ResetPasswordRequestRepository.php.html#53\">App\\Infrastructure\\Repository\\ResetPasswordRequestRepository::createResetPasswordRequest<\/a>"],[100,1,"<a href=\"Repository\/RevisionAttributeRepository.php.html#16\">App\\Infrastructure\\Repository\\RevisionAttributeRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/RevisionAttributeRepository.php.html#24\">App\\Infrastructure\\Repository\\RevisionAttributeRepository::getAllQuery<\/a>"],[0,1,"<a href=\"Repository\/RevisionAttributeRepository.php.html#34\">App\\Infrastructure\\Repository\\RevisionAttributeRepository::findByAttributeByCategoryCode<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#33\">App\\Infrastructure\\Repository\\RevisionRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#43\">App\\Infrastructure\\Repository\\RevisionRepository::getFavorites<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#69\">App\\Infrastructure\\Repository\\RevisionRepository::getAllQuery<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#79\">App\\Infrastructure\\Repository\\RevisionRepository::getLatestFavoritesWithPictures<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#114\">App\\Infrastructure\\Repository\\RevisionRepository::getLatestRevisionsWithPictures<\/a>"],[0,1,"<a href=\"Repository\/RevisionRepository.php.html#138\">App\\Infrastructure\\Repository\\RevisionRepository::getMaxRevisionByPointOfInterest<\/a>"],[0,1,"<a href=\"Repository\/RevisionRepository.php.html#154\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionToRefresh<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#176\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionsByPointOfInterest<\/a>"],[100,3,"<a href=\"Repository\/RevisionRepository.php.html#194\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionsWithPictures<\/a>"],[0,9,"<a href=\"Repository\/RevisionRepository.php.html#245\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionsFromOffmap<\/a>"],[0,3,"<a href=\"Repository\/RevisionRepository.php.html#295\">App\\Infrastructure\\Repository\\RevisionRepository::isBadSQL<\/a>"],[0,2,"<a href=\"Repository\/RevisionRepository.php.html#304\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionsFromDirectoryDepartment<\/a>"],[0,3,"<a href=\"Repository\/RevisionRepository.php.html#315\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionsFromDepartmentQueryBuilder<\/a>"],[0,1,"<a href=\"Repository\/RevisionRepository.php.html#338\">App\\Infrastructure\\Repository\\RevisionRepository::getRevisionByDistance<\/a>"],[0,1,"<a href=\"Repository\/RevisionRepository.php.html#359\">App\\Infrastructure\\Repository\\RevisionRepository::findAllGps<\/a>"],[0,2,"<a href=\"Repository\/RevisionRepository.php.html#372\">App\\Infrastructure\\Repository\\RevisionRepository::countCreatedHostByDate<\/a>"],[100,1,"<a href=\"Repository\/RevisionRepository.php.html#392\">App\\Infrastructure\\Repository\\RevisionRepository::getMainQuery<\/a>"],[0,1,"<a href=\"Repository\/TeamMemberRepository.php.html#15\">App\\Infrastructure\\Repository\\TeamMemberRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/TripCategoryRepository.php.html#16\">App\\Infrastructure\\Repository\\TripCategoryRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/TripCommentRepository.php.html#12\">App\\Infrastructure\\Repository\\TripCommentRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/TripCountryRepository.php.html#16\">App\\Infrastructure\\Repository\\TripCountryRepository::__construct<\/a>"],[0,1,"<a href=\"Repository\/TripMapPointRepository.php.html#16\">App\\Infrastructure\\Repository\\TripMapPointRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/TripRepository.php.html#15\">App\\Infrastructure\\Repository\\TripRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/TripRepository.php.html#20\">App\\Infrastructure\\Repository\\TripRepository::getByCategories<\/a>"],[0,1,"<a href=\"Repository\/TripRepository.php.html#32\">App\\Infrastructure\\Repository\\TripRepository::getTopCopiedTrips<\/a>"],[0,1,"<a href=\"Repository\/TripRepository.php.html#50\">App\\Infrastructure\\Repository\\TripRepository::findAllWithoutStartEnd<\/a>"],[0,1,"<a href=\"Repository\/VehicleTypeRepository.php.html#13\">App\\Infrastructure\\Repository\\VehicleTypeRepository::__construct<\/a>"],[100,1,"<a href=\"Repository\/WebAdRepository.php.html#16\">App\\Infrastructure\\Repository\\WebAdRepository::__construct<\/a>"],[0,4,"<a href=\"Repository\/WebAdRepository.php.html#21\">App\\Infrastructure\\Repository\\WebAdRepository::getAds<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <title>Dashboard for /var/www/app/src/Command/Revision</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="../../_css/bootstrap.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/nv.d3.min.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/style.css?v=9.2.26" rel="stylesheet" type="text/css">
+  <link href="../../_css/custom.css" rel="stylesheet" type="text/css">
+ </head>
+ <body>
+  <header>
+   <div class="container-fluid">
+    <div class="row">
+     <div class="col-md-12">
+      <nav aria-label="breadcrumb">
+       <ol class="breadcrumb">
+         <li class="breadcrumb-item"><a href="../../index.html">/var/www/app/src</a></li>
+         <li class="breadcrumb-item"><a href="../index.html">Command</a></li>
+         <li class="breadcrumb-item"><a href="index.html">Revision</a></li>
+         <li class="breadcrumb-item active">(Dashboard)</li>
+
+       </ol>
+      </nav>
+     </div>
+    </div>
+   </div>
+  </header>
+  <div class="container-fluid">
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Classes</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="classCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="classComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CreateCommand.php.html#12">App\Command\Revision\CreateCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateCommandHandler.php.html#17">App\Command\Revision\CreateCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommand.php.html#11">App\Command\Revision\GeneratePdfCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#23">App\Command\Revision\GeneratePdfCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommand.php.html#12">App\Command\Revision\IncrementRevisionCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommandHandler.php.html#19">App\Command\Revision\IncrementRevisionCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommand.php.html#12">App\Command\Revision\SelectCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommandHandler.php.html#21">App\Command\Revision\SelectCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommand.php.html#13">App\Command\Revision\ShareRevisionCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommandHandler.php.html#16">App\Command\Revision\ShareRevisionCommandHandler</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommand.php.html#12">App\Command\Revision\ValidateCommand</a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommandHandler.php.html#24">App\Command\Revision\ValidateCommandHandler</a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Class</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#23">App\Command\Revision\GeneratePdfCommandHandler</a></td><td class="text-right">306</td></tr>
+       <tr><td><a href="ValidateCommandHandler.php.html#24">App\Command\Revision\ValidateCommandHandler</a></td><td class="text-right">90</td></tr>
+       <tr><td><a href="SelectCommandHandler.php.html#21">App\Command\Revision\SelectCommandHandler</a></td><td class="text-right">42</td></tr>
+       <tr><td><a href="IncrementRevisionCommandHandler.php.html#19">App\Command\Revision\IncrementRevisionCommandHandler</a></td><td class="text-right">30</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-12">
+     <h2>Methods</h2>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Coverage Distribution</h3>
+     <div id="methodCoverageDistribution" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Complexity</h3>
+     <div id="methodComplexity" style="height: 300px;">
+       <svg></svg>
+     </div>
+    </div>
+   </div>
+   <div class="row">
+    <div class="col-md-6">
+     <h3>Insufficient Coverage</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right">Coverage</th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="CreateCommand.php.html#14"><abbr title="App\Command\Revision\CreateCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateCommand.php.html#21"><abbr title="App\Command\Revision\CreateCommand::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateCommand.php.html#29"><abbr title="App\Command\Revision\CreateCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateCommandHandler.php.html#24"><abbr title="App\Command\Revision\CreateCommandHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="CreateCommandHandler.php.html#34"><abbr title="App\Command\Revision\CreateCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommand.php.html#13"><abbr title="App\Command\Revision\GeneratePdfCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommand.php.html#20"><abbr title="App\Command\Revision\GeneratePdfCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommand.php.html#28"><abbr title="App\Command\Revision\GeneratePdfCommand::getLang">getLang</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#25"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#41"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#189"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::flatten">flatten</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#202"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::getAttributeArray">getAttributeArray</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommand.php.html#14"><abbr title="App\Command\Revision\IncrementRevisionCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommand.php.html#23"><abbr title="App\Command\Revision\IncrementRevisionCommand::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommand.php.html#31"><abbr title="App\Command\Revision\IncrementRevisionCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommandHandler.php.html#21"><abbr title="App\Command\Revision\IncrementRevisionCommandHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="IncrementRevisionCommandHandler.php.html#33"><abbr title="App\Command\Revision\IncrementRevisionCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommand.php.html#14"><abbr title="App\Command\Revision\SelectCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommand.php.html#21"><abbr title="App\Command\Revision\SelectCommand::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommand.php.html#29"><abbr title="App\Command\Revision\SelectCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommandHandler.php.html#23"><abbr title="App\Command\Revision\SelectCommandHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="SelectCommandHandler.php.html#33"><abbr title="App\Command\Revision\SelectCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommand.php.html#15"><abbr title="App\Command\Revision\ShareRevisionCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommand.php.html#22"><abbr title="App\Command\Revision\ShareRevisionCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommand.php.html#30"><abbr title="App\Command\Revision\ShareRevisionCommand::getContactForm">getContactForm</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ShareRevisionCommandHandler.php.html#18"><abbr title="App\Command\Revision\ShareRevisionCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommand.php.html#14"><abbr title="App\Command\Revision\ValidateCommand::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommand.php.html#24"><abbr title="App\Command\Revision\ValidateCommand::getAuthor">getAuthor</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommand.php.html#32"><abbr title="App\Command\Revision\ValidateCommand::getRevision">getRevision</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommand.php.html#40"><abbr title="App\Command\Revision\ValidateCommand::getContext">getContext</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommandHandler.php.html#26"><abbr title="App\Command\Revision\ValidateCommandHandler::__construct">__construct</abbr></a></td><td class="text-right">0%</td></tr>
+       <tr><td><a href="ValidateCommandHandler.php.html#42"><abbr title="App\Command\Revision\ValidateCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">0%</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+    <div class="col-md-6">
+     <h3>Project Risks</h3>
+     <div class="scrollbox">
+      <table class="table">
+       <thead>
+        <tr>
+         <th>Method</th>
+         <th class="text-right"><abbr title="Change Risk Anti-Patterns (CRAP) Index">CRAP</abbr></th>
+        </tr>
+       </thead>
+       <tbody>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#41"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">132</td></tr>
+       <tr><td><a href="ValidateCommandHandler.php.html#42"><abbr title="App\Command\Revision\ValidateCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">72</td></tr>
+       <tr><td><a href="SelectCommandHandler.php.html#33"><abbr title="App\Command\Revision\SelectCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">30</td></tr>
+       <tr><td><a href="GeneratePdfCommandHandler.php.html#202"><abbr title="App\Command\Revision\GeneratePdfCommandHandler::getAttributeArray">getAttributeArray</abbr></a></td><td class="text-right">20</td></tr>
+       <tr><td><a href="IncrementRevisionCommandHandler.php.html#33"><abbr title="App\Command\Revision\IncrementRevisionCommandHandler::__invoke">__invoke</abbr></a></td><td class="text-right">20</td></tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <footer>
+    <hr/>
+    <p>
+     <small>Generated by <a href="https://github.com/sebastianbergmann/php-code-coverage" target="_top">php-code-coverage 9.2.26</a> using <a href="https://secure.php.net/" target="_top">PHP 8.1.4</a> and <a href="https://phpunit.de/">PHPUnit 9.6.8</a> at Tue Jun 6 15:30:20 UTC 2023.</small>
+    </p>
+   </footer>
+  </div>
+  <script src="../../_js/jquery.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../../_js/d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script src="../../_js/nv.d3.min.js?v=9.2.26" type="text/javascript"></script>
+  <script type="text/javascript">
+$(document).ready(function() {
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#classCoverageDistribution svg')
+      .datum(getCoverageDistributionData([12,0,0,0,0,0,0,0,0,0,0,0], "Class Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.multiBarChart();
+    chart.tooltips(false)
+      .showControls(false)
+      .showLegend(false)
+      .reduceXTicks(false)
+      .staggerLabels(true)
+      .yAxis.tickFormat(d3.format('d'));
+
+    d3.select('#methodCoverageDistribution svg')
+      .datum(getCoverageDistributionData([32,0,0,0,0,0,0,0,0,0,0,0], "Method Coverage"))
+      .transition().duration(500).call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getCoverageDistributionData(data, label) {
+    var labels = [
+      '0%',
+      '0-10%',
+      '10-20%',
+      '20-30%',
+      '30-40%',
+      '40-50%',
+      '50-60%',
+      '60-70%',
+      '70-80%',
+      '80-90%',
+      '90-100%',
+      '100%'
+    ];
+    var values = [];
+    $.each(labels, function(key) {
+      values.push({x: labels[key], y: data[key]});
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Cyclomatic Complexity');
+
+    d3.select('#classComplexity svg')
+      .datum(getComplexityData([[0,3,"<a href=\"CreateCommand.php.html#12\">App\\Command\\Revision\\CreateCommand<\/a>"],[0,2,"<a href=\"CreateCommandHandler.php.html#17\">App\\Command\\Revision\\CreateCommandHandler<\/a>"],[0,3,"<a href=\"GeneratePdfCommand.php.html#11\">App\\Command\\Revision\\GeneratePdfCommand<\/a>"],[0,17,"<a href=\"GeneratePdfCommandHandler.php.html#23\">App\\Command\\Revision\\GeneratePdfCommandHandler<\/a>"],[0,3,"<a href=\"IncrementRevisionCommand.php.html#12\">App\\Command\\Revision\\IncrementRevisionCommand<\/a>"],[0,5,"<a href=\"IncrementRevisionCommandHandler.php.html#19\">App\\Command\\Revision\\IncrementRevisionCommandHandler<\/a>"],[0,3,"<a href=\"SelectCommand.php.html#12\">App\\Command\\Revision\\SelectCommand<\/a>"],[0,6,"<a href=\"SelectCommandHandler.php.html#21\">App\\Command\\Revision\\SelectCommandHandler<\/a>"],[0,3,"<a href=\"ShareRevisionCommand.php.html#13\">App\\Command\\Revision\\ShareRevisionCommand<\/a>"],[0,1,"<a href=\"ShareRevisionCommandHandler.php.html#16\">App\\Command\\Revision\\ShareRevisionCommandHandler<\/a>"],[0,4,"<a href=\"ValidateCommand.php.html#12\">App\\Command\\Revision\\ValidateCommand<\/a>"],[0,9,"<a href=\"ValidateCommandHandler.php.html#24\">App\\Command\\Revision\\ValidateCommandHandler<\/a>"]], 'Class Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  nv.addGraph(function() {
+    var chart = nv.models.scatterChart()
+      .showDistX(true)
+      .showDistY(true)
+      .showLegend(false)
+      .forceX([0, 100]);
+    chart.tooltipContent(function(graph) {
+      return '<p>' + graph.point.class + '</p>';
+    });
+
+    chart.xAxis.axisLabel('Code Coverage (in percent)');
+    chart.yAxis.axisLabel('Method Complexity');
+
+    d3.select('#methodComplexity svg')
+      .datum(getComplexityData([[0,1,"<a href=\"CreateCommand.php.html#14\">App\\Command\\Revision\\CreateCommand::__construct<\/a>"],[0,1,"<a href=\"CreateCommand.php.html#21\">App\\Command\\Revision\\CreateCommand::getAuthor<\/a>"],[0,1,"<a href=\"CreateCommand.php.html#29\">App\\Command\\Revision\\CreateCommand::getRevision<\/a>"],[0,1,"<a href=\"CreateCommandHandler.php.html#24\">App\\Command\\Revision\\CreateCommandHandler::__construct<\/a>"],[0,1,"<a href=\"CreateCommandHandler.php.html#34\">App\\Command\\Revision\\CreateCommandHandler::__invoke<\/a>"],[0,1,"<a href=\"GeneratePdfCommand.php.html#13\">App\\Command\\Revision\\GeneratePdfCommand::__construct<\/a>"],[0,1,"<a href=\"GeneratePdfCommand.php.html#20\">App\\Command\\Revision\\GeneratePdfCommand::getRevision<\/a>"],[0,1,"<a href=\"GeneratePdfCommand.php.html#28\">App\\Command\\Revision\\GeneratePdfCommand::getLang<\/a>"],[0,1,"<a href=\"GeneratePdfCommandHandler.php.html#25\">App\\Command\\Revision\\GeneratePdfCommandHandler::__construct<\/a>"],[0,11,"<a href=\"GeneratePdfCommandHandler.php.html#41\">App\\Command\\Revision\\GeneratePdfCommandHandler::__invoke<\/a>"],[0,1,"<a href=\"GeneratePdfCommandHandler.php.html#189\">App\\Command\\Revision\\GeneratePdfCommandHandler::flatten<\/a>"],[0,4,"<a href=\"GeneratePdfCommandHandler.php.html#202\">App\\Command\\Revision\\GeneratePdfCommandHandler::getAttributeArray<\/a>"],[0,1,"<a href=\"IncrementRevisionCommand.php.html#14\">App\\Command\\Revision\\IncrementRevisionCommand::__construct<\/a>"],[0,1,"<a href=\"IncrementRevisionCommand.php.html#23\">App\\Command\\Revision\\IncrementRevisionCommand::getAuthor<\/a>"],[0,1,"<a href=\"IncrementRevisionCommand.php.html#31\">App\\Command\\Revision\\IncrementRevisionCommand::getRevision<\/a>"],[0,1,"<a href=\"IncrementRevisionCommandHandler.php.html#21\">App\\Command\\Revision\\IncrementRevisionCommandHandler::__construct<\/a>"],[0,4,"<a href=\"IncrementRevisionCommandHandler.php.html#33\">App\\Command\\Revision\\IncrementRevisionCommandHandler::__invoke<\/a>"],[0,1,"<a href=\"SelectCommand.php.html#14\">App\\Command\\Revision\\SelectCommand::__construct<\/a>"],[0,1,"<a href=\"SelectCommand.php.html#21\">App\\Command\\Revision\\SelectCommand::getAuthor<\/a>"],[0,1,"<a href=\"SelectCommand.php.html#29\">App\\Command\\Revision\\SelectCommand::getRevision<\/a>"],[0,1,"<a href=\"SelectCommandHandler.php.html#23\">App\\Command\\Revision\\SelectCommandHandler::__construct<\/a>"],[0,5,"<a href=\"SelectCommandHandler.php.html#33\">App\\Command\\Revision\\SelectCommandHandler::__invoke<\/a>"],[0,1,"<a href=\"ShareRevisionCommand.php.html#15\">App\\Command\\Revision\\ShareRevisionCommand::__construct<\/a>"],[0,1,"<a href=\"ShareRevisionCommand.php.html#22\">App\\Command\\Revision\\ShareRevisionCommand::getRevision<\/a>"],[0,1,"<a href=\"ShareRevisionCommand.php.html#30\">App\\Command\\Revision\\ShareRevisionCommand::getContactForm<\/a>"],[0,1,"<a href=\"ShareRevisionCommandHandler.php.html#18\">App\\Command\\Revision\\ShareRevisionCommandHandler::__invoke<\/a>"],[0,1,"<a href=\"ValidateCommand.php.html#14\">App\\Command\\Revision\\ValidateCommand::__construct<\/a>"],[0,1,"<a href=\"ValidateCommand.php.html#24\">App\\Command\\Revision\\ValidateCommand::getAuthor<\/a>"],[0,1,"<a href=\"ValidateCommand.php.html#32\">App\\Command\\Revision\\ValidateCommand::getRevision<\/a>"],[0,1,"<a href=\"ValidateCommand.php.html#40\">App\\Command\\Revision\\ValidateCommand::getContext<\/a>"],[0,1,"<a href=\"ValidateCommandHandler.php.html#26\">App\\Command\\Revision\\ValidateCommandHandler::__construct<\/a>"],[0,8,"<a href=\"ValidateCommandHandler.php.html#42\">App\\Command\\Revision\\ValidateCommandHandler::__invoke<\/a>"]], 'Method Complexity'))
+      .transition()
+      .duration(500)
+      .call(chart);
+
+    nv.utils.windowResize(chart.update);
+
+    return chart;
+  });
+
+  function getComplexityData(data, label) {
+    var values = [];
+    $.each(data, function(key) {
+      var value = Math.round(data[key][0]*100) / 100;
+      values.push({
+        x: value,
+        y: data[key][1],
+        class: data[key][2],
+        size: 0.05,
+        shape: 'diamond'
+      });
+    });
+
+    return [
+      {
+        key: label,
+        values: values,
+        color: "#4572A7"
+      }
+    ];
+  }
+});
+  </script>
+ </body>
+</html>
