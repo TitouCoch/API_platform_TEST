@@ -1,4 +1,4 @@
-[![forthebadge](https://forthebadge.com/images/badges/for-sharks.svg)](https://forthebadge.com) 
+[![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
 # API Platform Test Runner  
 
 This project aims to automate PHPUnit tests for Symfony API endpoints using the API provided by API Platform. It helps ensure the functionality and integrity of the endpoints by executing predefined tests.
