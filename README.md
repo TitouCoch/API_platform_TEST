@@ -1,5 +1,5 @@
 [![forthebadge](https://forthebadge.com/images/badges/for-you.svg)](https://forthebadge.com)
-# API Platform Test Runner  
+# API Platform Test Runner  ✔️
 
 This project aims to automate PHPUnit tests for Symfony API endpoints using the API provided by API Platform. It helps ensure the functionality and integrity of the endpoints by executing predefined tests.
 
@@ -28,13 +28,35 @@ php bin/console api:openapi:export -o ...path/openapi.json
 3. Execute the following command:
 
 ```shell
+php bin/phpunit
+````
+
+---
+
+>If you want coverage report you can add **xdebug** by running those commands
+
+```shell 
+>>Terminal
+pecl install xdebug-3.1.3 
+
+>>Or Dockerfile
+RUN pecl install xdebug-3.1.3 \
+    && docker-php-ext-enable xdebug \
+    && echo "xdebug.mode=debug" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini \
+    && echo "xdebug.client_host=host.docker.internal" >> /usr/local/etc/php/conf.d/docker-php-ext-xdebug.ini
+````
+
+>Then you can run your tests 
+
+```shell
 php -dxdebug.mode=coverage bin/phpunit --coverage-html ./CoverageReport
 //or
 php bin/phpunit --coverage-text 
-````
 
+````
 This command will run the PHPUnit tests and generate a coverage report in the CoverageReport folder. You can open the generated HTML report in your web browser to analyze the test coverage.
 
+---
 ## Here is the result 
 
 <a href="https://imgur.com/CTnnKC4"><img src="https://i.imgur.com/CTnnKC4.png" title="source: imgur.com" /></a>
@@ -59,7 +81,7 @@ The program will automatically generate the test suite with your path
     </testsuites>
 ````
 
-You run your test suites using the command
+- [x] You run your test suites using the command
 
 ```shell
 php bin/phpunit --list-suites
