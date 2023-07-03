@@ -3,6 +3,20 @@
 
 This project aims to automate PHPUnit tests for Symfony API endpoints using the API provided by API Platform. It helps ensure the functionality and integrity of the endpoints by executing predefined tests.
 
+
+### Built With
+
+* [![Symfony][symfony.com]][symfony-url]
+* [![Api-Platform][Api-Platform.com]][Api-Platform-url]
+* [![PhpUnit][PhpUnit.com]][PhpUnit-url]
+
+[symfony.com]: https://img.shields.io/badge/symfony-000000?style=for-the-badge&logo=symfony&logoColor=white
+[symfony-url]: https://symfony.com/
+[Api-Platform.com]: https://img.shields.io/badge/Api_Platform-0769AD?style=for-the-badge&logo=api&logoColor=white
+[Api-Platform-url]: https://api-platform.com/
+[PhpUnit.com]: https://img.shields.io/badge/PhpUnit-4A4A55?style=for-the-badge&logo=php&logoColor=white
+[PhpUnit-url]: https://phpunit.de/
+
 ## Installation
 
 1. Copy the entire project into the `tests` folder of your Symfony API project.
@@ -98,7 +112,7 @@ Errors on tests are returned to the errors.json file
 - JsonTest.php 
 ```
 
-**verifyPath( string $path ) : string**
+*verifyPath( string $path ) : string*
 
 Description : Function that checks the path entered and if needed get "{uuid}, {id}, /me" from the fixtures
 
@@ -106,7 +120,9 @@ Input : string //Example /api/test/{uuid}
 
 OutPut : string //Example /api/test/1124d9e8-6266-4bcf-8035-37a02ba75c69
 
-**verifyMethod( string $method ) : void**
+---
+
+*verifyMethod( string $method ) : void*
 
 Description : Function that converts the method and checks if it is in the list of accepted methods
 
@@ -114,8 +130,9 @@ Input : string //Example get
 
 OutPut : //Example Change method variable to : GET
 
+---
 
-**getFilters( string $path, string $method ) : array|null**
+*getFilters( string $path, string $method ) : array|null*
 
 Description : Function checks if there are parameters in the component. If parameters are present, it checks if they are required. If a parameter is required, a new filter is assigned. If a parameter is not required, an empty array is returned.
 
@@ -123,7 +140,9 @@ Input : string, string //Example /api/test, GET
 
 OutPut : array //Example [] or [deleteAt=false]
 
-**getData( string $component ) : void**
+---
+
+*getData( string $component ) : void*
 
 Description: The function checks if the attribute is valid to be in the data, then based on its type attributes a default value
 
@@ -131,7 +150,9 @@ Input : string //Example Test.jsonld-Test_write"
 
 OutPut : array //Example Change data variable to : [] or [code=1,...]
 
-**getFileName( string $path ) : string**
+---
+
+*getFileName( string $path ) : string*
 
 Description: Converts the path to a path that can be a readable and easily understood filename
 
@@ -139,7 +160,9 @@ Input : string //Example /api/test
 
 OutPut : string //Example _1_Test
 
-**testAPI() : void**
+---
+
+*testAPI() : void*
 
 Description: Main test function that called many functions to get the path, method, response code, data, filter. Then call the API to test these metadata
 
@@ -152,7 +175,7 @@ OutPut : //
 - MethodTest.php 
 ```
 
-**setUp() : void**
+*setUp() : void*
 
 Description: Initialize the application kernel before running the tests, and get the token so that you can call the API
 
@@ -160,7 +183,9 @@ Input : //
 
 OutPut : //
 
-**clearLogTest() : void**
+---
+
+*clearLogTest() : void*
 
 Description: Empties the log file ('Test' in the function name so that it is called automatically when the tests are started)
 
@@ -168,7 +193,9 @@ Input : //
 
 OutPut : //
 
-**getToken() : string|null**
+---
+
+*getToken() : string|null*
 
 Description: Check if the token exists, otherwise call the login path with the credentials and get the token.
 
@@ -176,7 +203,9 @@ Input : //
 
 OutPut : string //Example aexs23KjdijsEDSJI342CnjdRj...
 
-**getDataFixture( string $pathCut, string $key, array $filters, ?string $path = null ): string|null**
+---
+
+*getDataFixture( string $pathCut, string $key, array $filters, ?string $path = null ): string|null*
 
 Description: Recovers the last data key from the API (id, uuid). Return an error if there is no data in the database or if the key does not match an existing attribute 
 
@@ -184,7 +213,9 @@ Input : string, string, array, ?string //Example /api/test, uuid, [], null
 
 OutPut : string //Example 1124d9e8-6266-4bcf-8035-37a02ba75c69
 
-**getDefaultValue( string $definition ): bool|object|array|int|string|null**
+---
+
+*getDefaultValue( string $definition ): bool|object|array|int|string|null*
 
 Description: Attributes a default value based on the data type 
 
@@ -194,7 +225,9 @@ Input : string //Example                         "schema": {
 
 OutPut : string //Example test
 
-**matchFilter( string $name ): ?string**
+---
+
+*matchFilter( string $name ): ?string*
 
 Description: Attribute a value to the filter entered, if it does not exist you can add it directly in the function
 
@@ -202,7 +235,9 @@ Input : string //Example deletedAt
 
 OutPut : string //Example false
 
-**tranformPath( string $path ): string|null**
+---
+
+*tranformPath( string $path ): string|null*
 
 Description: Transforms path to a valid attribut name 
 
@@ -210,7 +245,9 @@ Input : string //Example /api/local_countries
 
 OutPut : string //Example localCountry
 
-**getIriReference( string $property ): bool**
+---
+
+*getIriReference( string $property ): bool*
 
 Description: Adds the last attribute data if it exists as a path in the API
 
@@ -218,8 +255,9 @@ Input : string //Example localCountry
 
 OutPut : bool //Example false
 
+---
 
-**reachComponent( string $component ): array|string|null**
+*reachComponent( string $component ): array|string|null*
 
 Description: Try to find the best component to build the object using the list (the list can be modified as needed)
 
@@ -227,11 +265,14 @@ Input : string //Example Picture.jsonld_read
 
 OutPut : bool //Example Picture.jsonld_write
 
+---
 
-**throwError( string $path, string $message ): void**
+*throwError( string $path, string $message ): void*
 
 Description: Write in the log file the errors passed as parameter
 
 Input : string, string //Example /api/test/me, 'Token invalid'
 
 OutPut : //
+
+---
